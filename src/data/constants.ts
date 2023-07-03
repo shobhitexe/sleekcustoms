@@ -13,7 +13,7 @@ export const navbarLinks: navLinksType[] = [
   { title: "Blog", link: "" },
 ];
 
-const imgBaseServices: string = "/src/assets/services";
+const imgBaseServices: string = "/services";
 
 export const servicesData: servicesDataType[] = [
   { title: "DETAILING", image: `${imgBaseServices}/detailing.png` },
@@ -28,7 +28,7 @@ export const servicesData: servicesDataType[] = [
   },
 ];
 
-const imgBasePartners: string = "/src/assets/partners";
+const imgBasePartners: string = "/partners";
 
 export const partnersImages: partnersImagesType[] = [
   { alt: "Onyx", image: `${imgBasePartners}/Onyx_Logo.png` },
@@ -36,7 +36,7 @@ export const partnersImages: partnersImagesType[] = [
   { alt: "Avery", image: `${imgBasePartners}/Avery.png` },
 ];
 
-const imageBaseReviews: string = "/src/assets/reviews/google.png";
+const imageBaseReviews: string = "/reviews/google.png";
 
 export const reviewsData: reviewsDataTypes[] = [
   {

@@ -12,8 +12,8 @@ export default {
         xl: "1700px",
       },
       backgroundImage: {
-        "hero-main": "url('/src/assets/hero/hero-main.png')",
-        "partners-bg": "url('/src/assets/partners/partners-bg.png')",
+        "hero-main": "url('/hero/hero-main.png')",
+        "partners-bg": "url('/partners/partners-bg.png')",
       },
       fontFamily: {
         Montserrat: ["Montserrat", "sans-serif"],
