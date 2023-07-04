@@ -1,4 +1,5 @@
 import { portfolioImages } from "../../data/constants/home-constants";
+import { motion } from "framer-motion";
 
 export default function Portfolio() {
   return (
@@ -22,7 +23,18 @@ export default function Portfolio() {
         {portfolioImages.map((data, idx) => {
           return (
             <div key={data.title + idx} className="relative">
-              <img src={data.image} alt={data.title} />
+              <motion.img
+                initial={{ opacity: 0, scale: 0 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{
+                  delay: idx * 0.05,
+                  type: "spring",
+                  stiffness: 50,
+                  damping: 12,
+                }}
+                src={data.image}
+                alt={data.title}
+              />
               <p className="absolute w-fit font-semibold px-2 font-Montserrat md:text-[10px] ss:text-[8px] text-[6px] ss:bottom-5 bottom-3 ss:left-5 left-3 rounded-lg bg-white">
                 {data.title}
               </p>

@@ -1,15 +1,36 @@
 import { reviewsData } from "../../data/constants/home-constants";
+import { motion } from "framer-motion";
 
 export default function Reviews() {
   return (
     <div className="py-[100px] flex flex-col gap-16">
       <div className="flex flex-col">
-        <p className="text-white text-center font-semibold text-[20px] capitalize opacity-70 font-Montserrat">
+        <motion.p
+          initial={{ opacity: 0, translateY: "100%" }}
+          whileInView={{ opacity: 1, translateY: "0%" }}
+          transition={{
+            delay: 0.2,
+            type: "spring",
+            stiffness: 60,
+            damping: 10,
+          }}
+          className="text-white text-center font-semibold text-[20px] capitalize opacity-70 font-Montserrat"
+        >
           REVIEWS
-        </p>
-        <h1 className=" text-white font-bold text-[50px] text-center font-deluxe">
+        </motion.p>
+        <motion.h1
+          initial={{ opacity: 0, translateY: "50%" }}
+          whileInView={{ opacity: 1, translateY: "0%" }}
+          transition={{
+            delay: 0.2,
+            type: "spring",
+            stiffness: 60,
+            damping: 10,
+          }}
+          className=" text-white font-bold text-[50px] text-center font-deluxe"
+        >
           DELIVERING SATISFACTION
-        </h1>
+        </motion.h1>
       </div>
       <div className="flex gap-10 justify-center flex-wrap">
         {reviewsData.map((data) => {

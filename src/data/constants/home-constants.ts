@@ -12,7 +12,7 @@ export const navbarLinks: navLinksType[] = [
   { title: "About", link: "" },
   { title: "Portfolio", link: "" },
   { title: "Reviews", link: "" },
-  { title: "Blog", link: "" },
+  // { title: "Blog", link: "" },
 ];
 
 const imgBaseServices: string = "/services";
