@@ -5,7 +5,7 @@ export default function Hero() {
     "bg-white px-10 py-2 ss:text-[15px] text-[12px] font-Montserrat font-semibold cursor-pointer";
 
   return (
-    <div className="bg-hero-main h-screen w-full bg-cover mx-auto">
+    <div className="sm:bg-hero-main bg-hero-mob h-screen w-full bg-cover mx-auto">
       <motion.div
         initial={{ opacity: 0, backdropFilter: "blur(100px)" }}
         animate={{ opacity: 1, backdropFilter: "blur(0px)" }}

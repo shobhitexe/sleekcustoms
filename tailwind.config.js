@@ -13,6 +13,7 @@ export default {
       },
       backgroundImage: {
         "hero-main": "url('/hero/hero-main.png')",
+        "hero-mob": "url('/hero/hero-mob.png')",
         "partners-bg": "url('/partners/partners-bg.png')",
         "about-bg": "url('/about/SBG.png')",
         "contact-bg": "url('/contact/contact-bg.png')",
