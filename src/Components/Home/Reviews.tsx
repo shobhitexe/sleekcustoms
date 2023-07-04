@@ -1,4 +1,4 @@
-import { reviewsData } from "../../data/constants";
+import { reviewsData } from "../../data/constants/home-constants";
 
 export default function Reviews() {
   return (
@@ -11,12 +11,12 @@ export default function Reviews() {
           DELIVERING SATISFACTION
         </h1>
       </div>
-      <div className="flex gap-10 justify-center">
+      <div className="flex gap-10 justify-center flex-wrap">
         {reviewsData.map((data) => {
           return (
             <div
               key={data.title}
-              className="flex flex-col bg-cardsBg gap-5 w-[400px] p-5 rounded-2xl"
+              className="flex flex-col bg-cardsBg gap-5 ss:w-[400px] w-[80%] p-5 rounded-2xl"
             >
               <h1 className="text-white font-Montserrat">{data.title}</h1>
               <p className="text-white text-[11px] capitalize opacity-70 font-Montserrat">

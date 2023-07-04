@@ -1,10 +1,22 @@
+import { motion } from "framer-motion";
+
 export default function Hero() {
   const buttonClasses: string =
     "bg-white px-10 py-2 ss:text-[15px] text-[12px] font-Montserrat font-semibold cursor-pointer";
 
   return (
     <div className="bg-hero-main h-screen w-full bg-cover mx-auto">
-      <div className=" bg-black h-screen sm:pt-[250px] pt-[200px] bg-opacity-30">
+      <motion.div
+        initial={{ opacity: 0, backdropFilter: "blur(100px)" }}
+        animate={{ opacity: 1, backdropFilter: "blur(0px)" }}
+        transition={{
+          delay: 0.1,
+          duration: 0.8,
+          type: "spring",
+          stiffness: 20,
+        }}
+        className=" bg-black h-screen sm:pt-[250px] pt-[200px] bg-opacity-30"
+      >
         <p className="text-white text-center font-semibold md:text-[26px] ss:text-[20px] text-[15px] capitalize opacity-70 font-Montserrat">
           PREMIUM AUTO DEALING
         </p>
@@ -18,7 +30,7 @@ export default function Hero() {
             View services
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

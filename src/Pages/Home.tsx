@@ -1,5 +1,13 @@
 import { Fragment } from "react";
-import { Hero, Services, Partners, Reviews } from "../Components";
+import {
+  Hero,
+  Services,
+  Partners,
+  Reviews,
+  Portfolio,
+  About,
+  Contact,
+} from "../Components";
 
 export default function Home() {
   return (
@@ -8,6 +16,9 @@ export default function Home() {
       <Services />
       <Partners />
       <Reviews />
+      <Portfolio />
+      <About />
+      <Contact />
     </Fragment>
   );
 }

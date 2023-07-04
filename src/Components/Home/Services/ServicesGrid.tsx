@@ -1,8 +1,8 @@
-import { servicesData } from "../../../data/constants";
+import { servicesData } from "../../../data/constants/home-constants";
 
 export default function ServicesGrid() {
   return (
-    <div className="grid grid-cols-2 gap-5 mt-16">
+    <div className="ss:grid flex flex-col grid-cols-2 gap-5 mt-16">
       {servicesData.map((data) => {
         return (
           <div key={data.title} className="relative">

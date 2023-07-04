@@ -1,4 +1,4 @@
-import { Navbar } from "./Components";
+import { Footer, Navbar } from "./Components";
 import { Home } from "./Pages";
 import { Fragment } from "react";
 
@@ -7,6 +7,7 @@ function App() {
     <Fragment>
       <Navbar />
       <Home />
+      <Footer />
     </Fragment>
   );
 }
