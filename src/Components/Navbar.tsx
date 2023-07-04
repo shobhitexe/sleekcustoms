@@ -41,7 +41,7 @@ export default function Navbar() {
       </div>
 
       <img
-        src="/navbar/cross.svg"
+        src={`/navbar/${isOpen ? "cross" : "ham"}.svg`}
         alt="cross"
         className="w-7 h-7 sm:hidden block cursor-pointer"
         onClick={() => {
