@@ -19,7 +19,7 @@ export default function Hero() {
       >
         <motion.p
           initial={{ opacity: 0, translateY: "100%" }}
-          animate={{ opacity: 1, translateY: "0%" }}
+          whileInView={{ opacity: 1, translateY: "0%" }}
           transition={{
             delay: 0.1,
             duration: 0.8,
@@ -32,7 +32,7 @@ export default function Hero() {
         </motion.p>
         <motion.p
           initial={{ opacity: 0, translateY: "20%" }}
-          animate={{ opacity: 1, translateY: "0%" }}
+          whileInView={{ opacity: 1, translateY: "0%" }}
           transition={{
             delay: 0.4,
             type: "spring",

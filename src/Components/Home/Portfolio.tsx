@@ -1,10 +1,10 @@
-import { portfolioImages } from "../../data/constants/home-constants";
+import { portfolioImages } from "../../data/constants/Home/homeConstants";
 import { motion } from "framer-motion";
 
 export default function Portfolio() {
   return (
-    <div className="flex bg-black justify-between">
-      <div className="flex flex-col ss:gap-5 xs:gap-3 gap-1 mx-auto justify-center">
+    <div className="flex sm:flex-row flex-col bg-black justify-between sm:pt-0 pt-[30px]">
+      <div className="flex flex-col ss:gap-5 xs:gap-3 gap-1 mx-auto justify-center sm:pb-auto pb-[30px]">
         <p className="text-white text-left font-semibold md:text-[20px] ss:text-[15px] text-[10px] capitalize opacity-70 font-Montserrat">
           HAPPY MOMENTS
         </p>
@@ -19,7 +19,7 @@ export default function Portfolio() {
           VIEW ALL
         </div>
       </div>
-      <div className="grid grid-cols-2 w-[60%]">
+      <div className="grid sm:grid-cols-2 grid-cols-3 sm:w-[60%] w-auto">
         {portfolioImages.map((data, idx) => {
           return (
             <div key={data.title + idx} className="relative">

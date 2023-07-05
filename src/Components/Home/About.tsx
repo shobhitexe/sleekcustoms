@@ -52,7 +52,7 @@ export default function About() {
             stiffness: 60,
             damping: 10,
           }}
-          className="text-white text-left font-semibold md:text-[12px] sm:text-[10px] xs:text-[8px] text-[6px] md:w-[500px] sm:w-[400px] xs:w-[300px] w-[250px] capitalize opacity-70 font-Montserrat"
+          className="text-white text-left font-semibold md:text-[12px] sm:text-[10px] text-[6px] md:w-[500px] sm:w-[400px] xs:w-[300px] w-[250px] capitalize opacity-70 font-Montserrat"
         >
           Sleek Customs is the finest automotive detailing and car care studio
           in Houston, Texas. We specialize in paint protection film, nano

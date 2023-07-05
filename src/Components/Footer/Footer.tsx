@@ -1,4 +1,4 @@
-import { footerData } from "../../data/constants/home-constants";
+import { footerData } from "../../data/constants/Home/homeConstants";
 import FooterLinks from "./FooterLinks";
 
 export default function Footer() {

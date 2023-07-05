@@ -1,4 +1,4 @@
-import { reviewsData } from "../../data/constants/home-constants";
+import { reviewsData } from "../../data/constants/Home/homeConstants";
 import { motion } from "framer-motion";
 
 export default function Reviews() {

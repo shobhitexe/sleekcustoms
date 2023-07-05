@@ -6,6 +6,7 @@ export type navLinksType = {
 export type servicesDataType = {
   title: string;
   image: string;
+  link: string;
 };
 
 export type partnersImagesType = {

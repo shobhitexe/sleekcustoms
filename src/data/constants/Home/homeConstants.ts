@@ -5,28 +5,38 @@ import {
   reviewsDataType,
   portfolioImagesType,
   FooterDataType,
-} from "./home-types";
+} from "./homeTypes";
 
 export const navbarLinks: navLinksType[] = [
   { title: "Services", link: "" },
   { title: "About", link: "" },
-  { title: "Portfolio", link: "" },
-  { title: "Reviews", link: "" },
+  { title: "Portfolio", link: "portfolio" },
+  { title: "Reviews", link: "customer-reviews" },
   // { title: "Blog", link: "" },
 ];
 
 const imgBaseServices: string = "/services";
 
 export const servicesData: servicesDataType[] = [
-  { title: "DETAILING", image: `${imgBaseServices}/detailing.png` },
-  { title: "CERAMIC COATING", image: `${imgBaseServices}/ceramic-coating.png` },
+  {
+    title: "AUTO DETAILING",
+    image: `${imgBaseServices}/detailing.png`,
+    link: "premium-detail",
+  },
+  {
+    title: "CERAMIC COATING",
+    image: `${imgBaseServices}/ceramic-coating.png`,
+    link: "",
+  },
   {
     title: "PAINT CORRECTION",
     image: `${imgBaseServices}/paint-correction.png`,
+    link: "",
   },
   {
     title: "PAINT PROTECTION FILMs",
     image: `${imgBaseServices}/paint-protection.png`,
+    link: "",
   },
 ];
 

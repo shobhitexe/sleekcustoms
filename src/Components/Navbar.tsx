@@ -1,7 +1,7 @@
-import { navbarLinks } from "../data/constants/home-constants";
+import { navbarLinks } from "../data/constants/Home/homeConstants";
 import { motion } from "framer-motion";
-
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -9,30 +9,33 @@ export default function Navbar() {
   return (
     <div className="w-full px-20 py-5 font-Montserrat flex justify-end align-middle fixed top-0 bg-black bg-opacity-50 backdrop-blur-sm z-20">
       <div className="w-28 h-28 absolute sm:left-20 ss:left-10 left-5 sm:top-5 ss:top-2 top-1">
-        <motion.img
-          initial={{ opacity: 0, translateY: "50px" }}
-          animate={{ opacity: 1, translateY: "0px" }}
-          transition={{
-            delay: 0.1,
-            duration: 0.5,
-            type: "spring",
-            stiffness: 60,
-          }}
-          src="/SC-Logo-1.svg"
-          className="sm:w-28 ss:w-24 w-20 sm:h-28 ss:h-24 h-20 z-20 bg-black rounded-full p-2 bg-opacity-50"
-          alt="logo"
-        />
+        <Link to={"/"}>
+          <motion.img
+            initial={{ opacity: 0, translateY: "50px" }}
+            animate={{ opacity: 1, translateY: "0px" }}
+            transition={{
+              delay: 0.1,
+              duration: 0.5,
+              type: "spring",
+              stiffness: 60,
+            }}
+            src="/SC-Logo-1.svg"
+            className="sm:w-28 ss:w-24 w-20 sm:h-28 ss:h-24 h-20 z-20 bg-black rounded-full p-2 bg-opacity-50"
+            alt="logo"
+          />
+        </Link>
       </div>
 
       <div className="sm:flex hidden md:gap-5 gap-3 items-center">
         {navbarLinks.map((nav) => {
           return (
-            <div
+            <Link
+              to={nav.link}
               className="text-white opacity-70 cursor-pointer md:text-[16px] text-[14px] hover:opacity-100"
               key={nav.title}
             >
               {nav.title}
-            </div>
+            </Link>
           );
         })}
         <div className="bg-white md:px-10 px-8 py-1 cursor-pointer">
@@ -63,10 +66,14 @@ export default function Navbar() {
           <div className="flex flex-col justify-center items-center gap-5 mt-10">
             {navbarLinks.map((nav) => {
               return (
-                <div key={nav.title} className=" text-[2rem] cursor-pointer">
+                <Link
+                  to={nav.link}
+                  key={nav.title}
+                  className=" text-[2rem] cursor-pointer"
+                >
                   {" "}
                   {nav.title}
-                </div>
+                </Link>
               );
             })}
           </div>

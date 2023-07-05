@@ -1,12 +1,13 @@
-import { servicesData } from "../../../data/constants/home-constants";
+import { servicesData } from "../../../data/constants/Home/homeConstants";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export default function ServicesGrid() {
   return (
     <div className="ss:grid flex flex-col grid-cols-2 gap-5 mt-16">
       {servicesData.map((data, idx) => {
         return (
-          <div key={data.title} className="relative">
+          <Link to={data.link} key={data.title} className="relative">
             <motion.img
               initial={{ opacity: 0, scale: 0.5 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -30,7 +31,7 @@ export default function ServicesGrid() {
                 RECOMMENDED
               </p>
             )}
-          </div>
+          </Link>
         );
       })}
     </div>

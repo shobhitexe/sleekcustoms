@@ -1,9 +1,9 @@
-import { partnersImages } from "../../data/constants/home-constants";
+import { partnersImages } from "../../data/constants/Home/homeConstants";
 import { motion } from "framer-motion";
 
 export default function Partners() {
   return (
-    <div className="bg-partners-bg bg-cover bg-no-repeat w-full mx-auto md:py-[100px] ss:py-[50px] py-[30px] bg-fixed bg-center">
+    <div className="bg-partners-bg bg-cover bg-no-repeat bg-center w-full mx-auto md:py-[100px] ss:py-[50px] py-[30px] bg-fixed bg-center">
       <div className="flex flex-col">
         <motion.p
           initial={{ opacity: 0, translateY: "100%" }}

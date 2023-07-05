@@ -17,6 +17,7 @@ export default {
         "partners-bg": "url('/partners/partners-bg.png')",
         "about-bg": "url('/about/SBG.png')",
         "contact-bg": "url('/contact/contact-bg.png')",
+        "portfolio-head": "url('/portfolio/pf-head.png')",
       },
       fontFamily: {
         Montserrat: ["Montserrat", "sans-serif"],

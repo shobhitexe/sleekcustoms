@@ -1,3 +1,6 @@
 import Home from "./Home";
+import AutoDetailing from "./AutoDetailing";
+import Reviews from "./Reviews";
+import Portfolio from "./Portfolio";
 
-export { Home };
+export { Home, AutoDetailing, Reviews, Portfolio };

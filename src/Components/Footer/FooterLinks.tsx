@@ -1,4 +1,4 @@
-import { linkType } from "../../data/constants/home-types";
+import { linkType } from "../../data/constants/Home/homeTypes";
 
 type FooterLinksProps = {
   linkData: linkType[];
