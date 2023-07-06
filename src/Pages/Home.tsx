@@ -3,10 +3,9 @@ import {
   Hero,
   Services,
   Partners,
-  Reviews,
+  ReviewHome,
   Portfolio,
   About,
-  Contact,
 } from "../Components";
 
 export default function Home() {
@@ -15,10 +14,9 @@ export default function Home() {
       <Hero />
       <Services />
       <Partners />
-      <Reviews />
+      <ReviewHome />
       <Portfolio />
       <About />
-      <Contact />
     </Fragment>
   );
 }

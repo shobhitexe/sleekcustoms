@@ -66,6 +66,46 @@ export const portfolioSelectionIcons: portfolioSelectionIconsType[] = [
     image: `${basePortfolioImage}/AstonMartin.svg`,
     tag: carTagType.astonmartin,
   },
+  {
+    image: `${basePortfolioImage}/bentley.svg`,
+    tag: carTagType.bentley,
+  },
+  {
+    image: `${basePortfolioImage}/genesis.svg`,
+    tag: carTagType.genesis,
+  },
+  {
+    image: `${basePortfolioImage}/hyundai.svg`,
+    tag: carTagType.hyundai,
+  },
+  {
+    image: `${basePortfolioImage}/jaguar.svg`,
+    tag: carTagType.jaguar,
+  },
+  {
+    image: `${basePortfolioImage}/lexus.svg`,
+    tag: carTagType.lexus,
+  },
+  {
+    image: `${basePortfolioImage}/MG.svg`,
+    tag: carTagType.MG,
+  },
+  {
+    image: `${basePortfolioImage}/mitsubishi.svg`,
+    tag: carTagType.mistubishi,
+  },
+  {
+    image: `${basePortfolioImage}/skoda.svg`,
+    tag: carTagType.skoda,
+  },
+  {
+    image: `${basePortfolioImage}/volkswagen.svg`,
+    tag: carTagType.volkswagen,
+  },
+  {
+    image: `${basePortfolioImage}/volvo.svg`,
+    tag: carTagType.volvo,
+  },
 ];
 
 const basePortfolioDisplay: string = "/portfolio/display";
@@ -144,3 +184,15 @@ export const PortfolioDisplayData: portfolioSelectionIconsType[] = [
   { image: `${basePortfolioDisplay}/volvo-1.jpg`, tag: carTagType.volvo },
   { image: `${basePortfolioDisplay}/`, tag: "" },
 ];
+
+export const groupedIcons: Record<string, portfolioSelectionIconsType[]> = {};
+
+PortfolioDisplayData.forEach((image) => {
+  const { tag } = image;
+
+  if (groupedIcons[tag]) {
+    groupedIcons[tag].push(image);
+  } else {
+    groupedIcons[tag] = [image];
+  }
+});

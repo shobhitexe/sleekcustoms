@@ -1,4 +1,7 @@
-import { portfolioSelectionIcons } from "../../data/constants/Portfolio/portfolioConstants";
+import {
+  portfolioSelectionIcons,
+  groupedIcons,
+} from "../../data/constants/Portfolio/portfolioConstants";
 import { Dispatch, SetStateAction, useState } from "react";
 type PortfolioHeadProps = {
   setFilter: Dispatch<SetStateAction<string>>;
@@ -9,15 +12,21 @@ export default function PortfolioSortIcons({ setFilter }: PortfolioHeadProps) {
 
   return (
     <div className="bg-black flex flex-col pb-14">
-      <h1 className="text-white p-10 w-[90%] mx-auto">Browse by car make:</h1>
-      <div className="md:flex grid grid-rows-1 grid-flow-col md:flex-wrap gap-10 w-[90%] mx-auto justify-center md:overflow-hidden overflow-x-scroll">
+      <h1 className="text-white p-10 w-[90%] mt-5 mx-auto">
+        Browse by car make:{" "}
+        <span className="md:hidden text-[12px]">
+          Swipe right to browse more
+        </span>
+      </h1>
+      <div className="flex md:flex-wrap gap-10 w-[90%] mx-auto md:justify-center md:overflow-hidden overflow-x-scroll">
         {portfolioSelectionIcons.map((data, idx) => {
+          if (!groupedIcons[data.tag]) return;
           return (
             <img
               key={data.tag}
               src={data.image}
               alt={data.tag}
-              className={`w-20 h-20 cursor-pointer ${
+              className={`md:w-20 sm:w-16 ss:w-14 w-12 md:h-20 sm:h-16 ss:h-14 h-12 cursor-pointer ${
                 idx === isSelected ? "bg-cardsBg px-4 rounded-md" : ""
               }`}
               onClick={() => {

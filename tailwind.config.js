@@ -13,11 +13,12 @@ export default {
       },
       backgroundImage: {
         "hero-main": "url('/hero/hero-main.png')",
-        "hero-mob": "url('/hero/hero-mob.png')",
+        "hero-mob": "url('/hero/hero-mob.jpg')",
         "partners-bg": "url('/partners/partners-bg.png')",
         "about-bg": "url('/about/SBG.png')",
         "contact-bg": "url('/contact/contact-bg.png')",
         "portfolio-head": "url('/portfolio/pf-head.png')",
+        "auto-detailing-bg": "url('/autoDetailing/AD-bg.png')",
       },
       fontFamily: {
         Montserrat: ["Montserrat", "sans-serif"],
@@ -26,6 +27,7 @@ export default {
       },
       colors: {
         cardsBg: "#1D1D1D",
+        priceText: "#36C3F2",
       },
     },
   },

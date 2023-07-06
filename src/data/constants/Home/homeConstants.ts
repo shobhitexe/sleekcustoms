@@ -8,7 +8,7 @@ import {
 } from "./homeTypes";
 
 export const navbarLinks: navLinksType[] = [
-  { title: "Services", link: "" },
+  { title: "Services", link: "more-services" },
   { title: "About", link: "" },
   { title: "Portfolio", link: "portfolio" },
   { title: "Reviews", link: "customer-reviews" },

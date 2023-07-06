@@ -26,7 +26,7 @@ export default function Services() {
             transition={{
               delay: 0.2,
               type: "spring",
-              stiffness: 100,
+              stiffness: 60,
               damping: 10,
             }}
             className="text-white font-bold font-deluxe text-[40px] z-10"

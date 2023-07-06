@@ -1,8 +1,4 @@
-import {
-  PortfolioHead,
-  PortfolioSortIcons,
-  PortfolioDisplay,
-} from "../Components";
+import { PortfolioSortIcons, PortfolioDisplay, PagesHead } from "../Components";
 import { Fragment, useState } from "react";
 
 export default function Portfolio() {
@@ -10,7 +6,11 @@ export default function Portfolio() {
 
   return (
     <Fragment>
-      <PortfolioHead />
+      <PagesHead
+        bgImage="portfolio-head"
+        heading1="GLASGOW, UNITED KINGDOM"
+        heading2="DETAILING PORTFOLIO"
+      />
       <PortfolioSortIcons setFilter={setFilter} />
       <PortfolioDisplay filter={filter} />
     </Fragment>
