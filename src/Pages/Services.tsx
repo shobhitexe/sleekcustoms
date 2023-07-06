@@ -5,7 +5,7 @@ export default function Services() {
   return (
     <Fragment>
       <PagesHead
-        bgImage="portfolio-head"
+        bgImage="bg-portfolio-head"
         heading1="DRIVE A NEW CAR EVERYDAY"
         heading2="MORE SERVICES"
       />

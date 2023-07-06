@@ -10,7 +10,7 @@ export default function AutoDetailing() {
   return (
     <Fragment>
       <PagesHead
-        bgImage="auto-detailing-bg"
+        bgImage="bg-auto-detailing-bg"
         heading1="DRIVE A NEW CAR EVERYDAY"
         heading2="AUTO DETAILING"
       />

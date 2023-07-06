@@ -7,7 +7,7 @@ export default function Portfolio() {
   return (
     <Fragment>
       <PagesHead
-        bgImage="portfolio-head"
+        bgImage="bg-portfolio-head"
         heading1="GLASGOW, UNITED KINGDOM"
         heading2="DETAILING PORTFOLIO"
       />

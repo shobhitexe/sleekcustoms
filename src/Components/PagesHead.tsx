@@ -10,7 +10,7 @@ export default function PagesHead({
   heading2,
 }: PagesHeadProps) {
   return (
-    <div className={`bg-${bgImage} ${" "} bg-cover relative bg-center`}>
+    <div className={`${bgImage} ${" "} bg-cover relative bg-center`}>
       <div className=" absolute bg-black bottom-[-50px] w-full h-[100px] blur-xl"></div>
       <div className="bg-black bg-opacity-50">
         <div className="text-white font-deluxe pt-[300px] flex ss:flex-row flex-col items-center justify-around">
