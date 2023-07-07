@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 type ServicesPageMainProps = {
   defaultImage: string;
@@ -18,23 +19,78 @@ export default function ServicesPageMain({
   return (
     <div className="w-[80%] mx-auto mt-[100px]">
       <div className="flex sm:flex-row flex-col">
-        <img
+        <motion.img
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{
+            delay: 0.1,
+            duration: 0.5,
+            type: "spring",
+            stiffness: 60,
+          }}
+          viewport={{ once: true, amount: 0.5 }}
           src={`ServicesComponent/${selectedImage}`}
           alt="AD-main"
           className="md:w-[60%] sm:w-[50%] object-contain"
         />
         <div className="flex flex-col text-white justify-center gap-1 lg:pl-20 pl-10 sm:mt-0 mt-7">
-          <p className="font-deluxe">WHAT IS IT?</p>
-          <h1 className="font-deluxe text-[30px]">{heading}</h1>
-          <p className="font-Montserrat md:text-[13px] text-[10px] md:w-[400px] sm:w-[300px] leading-relaxed opacity-60">
+          <motion.p
+            initial={{ opacity: 0, translateY: "50px" }}
+            whileInView={{ opacity: 1, translateY: "0px" }}
+            transition={{
+              delay: 0.1,
+              duration: 0.5,
+              type: "spring",
+              stiffness: 60,
+            }}
+            viewport={{ once: true, amount: 0.5 }}
+            className="font-deluxe"
+          >
+            WHAT IS IT?
+          </motion.p>
+          <motion.h1
+            initial={{ opacity: 0, translateY: "50px" }}
+            whileInView={{ opacity: 1, translateY: "0px" }}
+            transition={{
+              delay: 0.2,
+              duration: 0.5,
+              type: "spring",
+              stiffness: 50,
+            }}
+            viewport={{ once: true, amount: 0.5 }}
+            className="font-deluxe text-[30px]"
+          >
+            {heading}
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, translateY: "50px" }}
+            whileInView={{ opacity: 1, translateY: "0px" }}
+            transition={{
+              delay: 0.3,
+              duration: 0.5,
+              type: "spring",
+              stiffness: 40,
+            }}
+            viewport={{ once: true, amount: 0.5 }}
+            className="font-Montserrat md:text-[13px] text-[10px] md:w-[400px] sm:w-[300px] leading-relaxed opacity-60"
+          >
             {paragraph}
-          </p>
+          </motion.p>
         </div>
       </div>
       <div className="flex sm:flex-nowrap flex-wrap gap-5 mt-10 justify-center mx-auto">
-        {arrImages.map((data) => {
+        {arrImages.map((data, idx) => {
           return (
-            <img
+            <motion.img
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{
+                delay: 0.1 * idx,
+                duration: 0.5,
+                type: "spring",
+                stiffness: 60,
+              }}
+              viewport={{ once: true, amount: 0.5 }}
               src={`/ServicesComponent/${data}`}
               alt={data}
               key={data}

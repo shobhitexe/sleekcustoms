@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import { openInNewTab } from "../Pages/OpenLinks";
 
 export default function Contact() {
   const buttonClasses: string =
@@ -43,22 +45,27 @@ export default function Contact() {
             damping: 10,
           }}
           className={`${buttonClasses}`}
+          onClick={() =>
+            openInNewTab("https://www.instagram.com/sleekcustomsgarage/")
+          }
         >
           Book Today
         </motion.div>
-        <motion.div
-          initial={{ opacity: 0, translateY: "50%" }}
-          whileInView={{ opacity: 1, translateY: "0%" }}
-          transition={{
-            delay: 0.2,
-            type: "spring",
-            stiffness: 60,
-            damping: 10,
-          }}
-          className={`${buttonClasses} bg-opacity-20 text-white`}
-        >
-          View services
-        </motion.div>
+        <Link to={"/more-services"}>
+          <motion.div
+            initial={{ opacity: 0, translateY: "50%" }}
+            whileInView={{ opacity: 1, translateY: "0%" }}
+            transition={{
+              delay: 0.2,
+              type: "spring",
+              stiffness: 60,
+              damping: 10,
+            }}
+            className={`${buttonClasses} bg-opacity-20 text-white`}
+          >
+            View services
+          </motion.div>
+        </Link>
       </div>
     </div>
   );

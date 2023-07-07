@@ -1,3 +1,4 @@
+import { openInNewTab } from "../../Pages/OpenLinks";
 import { footerData } from "../../data/constants/Home/homeConstants";
 import FooterLinks from "./FooterLinks";
 
@@ -14,7 +15,15 @@ export default function Footer() {
           />
           <div className="flex gap-5">
             {footerData.socials.map((data) => {
-              return <img src={data.image} key={data.title} alt={data.title} />;
+              return (
+                <img
+                  src={data.image}
+                  key={data.title}
+                  alt={data.title}
+                  className=" cursor-pointer"
+                  onClick={() => openInNewTab(data.link)}
+                />
+              );
             })}
           </div>
         </div>

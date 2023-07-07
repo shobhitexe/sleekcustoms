@@ -25,7 +25,10 @@ function App() {
   const currentPath = location.pathname;
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   }, [location]);
 
   return (

@@ -15,7 +15,7 @@ export default function PaintProtection() {
   return (
     <Fragment>
       <PagesHead
-        bgImage="paint-protection-bg"
+        bgImage="bg-paint-protection-bg"
         heading1="DRIVE A NEW CAR EVERYDAY"
         heading2="PAINT PROTECTION FILM"
       />

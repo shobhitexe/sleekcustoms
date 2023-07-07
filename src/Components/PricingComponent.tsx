@@ -1,4 +1,6 @@
+import { motion } from "framer-motion";
 import { paintCorrectionPackagedataType } from "../data/constants/PaintCorrection/paintCorrectionTypes";
+import { openInNewTab } from "../Pages/OpenLinks";
 
 type PricingComponentProps = {
   detailsArr: paintCorrectionPackagedataType[];
@@ -9,9 +11,21 @@ export default function PricingComponent({
 }: PricingComponentProps) {
   return (
     <div className="flex sm:flex-row flex-col sm:w-[80%] max-sm:items-center mx-auto text-center justify-center gap-10 mt-5">
-      {detailsArr.map((data) => {
+      {detailsArr.map((data, idx) => {
+        const stiff = idx * 10;
         return (
-          <div className="text-white font-Montserrat flex flex-col sm:w-[50%] border h-fit">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{
+              delay: 0.4 * idx,
+              duration: 0.5,
+              type: "spring",
+              stiffness: 60 - stiff,
+            }}
+            viewport={{ once: true, amount: 0.5 }}
+            className="text-white font-Montserrat flex flex-col sm:w-[50%] border h-fit"
+          >
             <h1 className="font-deluxe text-[30px] border-b py-2">
               {data.heading}
             </h1>
@@ -26,9 +40,16 @@ export default function PricingComponent({
               })}
             </ul>
 
-            <p className="text-[15px] py-4 border-t">See Details</p>
+            <p
+              className="text-[15px] py-4 border-t cursor-pointer"
+              onClick={() =>
+                openInNewTab("https://www.instagram.com/sleekcustomsgarage/")
+              }
+            >
+              See Details
+            </p>
             <p className="text-priceText border-t py-3">£{data.pricing}</p>
-          </div>
+          </motion.div>
         );
       })}
     </div>

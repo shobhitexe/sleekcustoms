@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { openInNewTab } from "../../Pages/OpenLinks";
 
 export default function Hero() {
   const buttonClasses: string =
@@ -7,18 +8,19 @@ export default function Hero() {
   return (
     <div className="sm:bg-hero-main bg-hero-mob h-screen w-full bg-cover mx-auto">
       <motion.div
-        initial={{ opacity: 0, backdropFilter: "blur(100px)" }}
-        animate={{ opacity: 1, backdropFilter: "blur(0px)" }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
         transition={{
           delay: 0.1,
           duration: 0.8,
           type: "spring",
           stiffness: 20,
         }}
+        viewport={{ once: true, amount: 0.5 }}
         className=" bg-black h-screen sm:pt-[250px] pt-[200px] bg-opacity-30"
       >
         <motion.p
-          initial={{ opacity: 0, translateY: "100%" }}
+          initial={{ opacity: 0, translateY: "50%" }}
           whileInView={{ opacity: 1, translateY: "0%" }}
           transition={{
             delay: 0.1,
@@ -26,6 +28,7 @@ export default function Hero() {
             type: "spring",
             stiffness: 60,
           }}
+          viewport={{ once: true, amount: 0.5 }}
           className="text-white text-center font-semibold md:text-[26px] ss:text-[20px] text-[15px] capitalize opacity-70 font-Montserrat"
         >
           PREMIUM AUTO DEALING
@@ -36,8 +39,9 @@ export default function Hero() {
           transition={{
             delay: 0.4,
             type: "spring",
-            stiffness: 60,
+            stiffness: 50,
           }}
+          viewport={{ once: true, amount: 0.5 }}
           className="text-white font-bold md:text-[88px] sm:text-[70px] ss:text-[60px] xs:text-[50px] text-[40px] md:leading-[100px] ss:leading-[80px] xs:leading-[70px] leading-[50px] text-center font-deluxe"
         >
           FALL IN LOVE WITH YOUR CAR <br /> ALL OVER AGAIN
@@ -50,9 +54,13 @@ export default function Hero() {
             transition={{
               delay: 0.4,
               type: "spring",
-              stiffness: 60,
+              stiffness: 40,
             }}
+            viewport={{ once: true, amount: 0.5 }}
             className={`${buttonClasses}`}
+            onClick={() =>
+              openInNewTab("https://www.instagram.com/sleekcustomsgarage/")
+            }
           >
             Book Today
           </motion.div>
@@ -62,8 +70,9 @@ export default function Hero() {
             transition={{
               delay: 0.4,
               type: "spring",
-              stiffness: 60,
+              stiffness: 40,
             }}
+            viewport={{ once: true, amount: 0.5 }}
             className={`${buttonClasses} bg-opacity-20 text-white`}
           >
             View services

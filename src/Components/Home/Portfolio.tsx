@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { portfolioImages } from "../../data/constants/Home/homeConstants";
 import { motion } from "framer-motion";
 
@@ -15,9 +16,12 @@ export default function Portfolio() {
           Take a deeper look into
           <br /> our current and past <br /> projects.
         </p>
-        <div className="bg-cardsBg text-white py-1 px-5 w-fit md:text-[12px] ss:text-[10px] text-[8px] font-Montserrat cursor-pointer">
+        <Link
+          to={"/portfolio"}
+          className="bg-cardsBg text-white py-1 px-5 w-fit md:text-[12px] ss:text-[10px] text-[8px] font-Montserrat cursor-pointer"
+        >
           VIEW ALL
-        </div>
+        </Link>
       </div>
       <div className="grid sm:grid-cols-2 grid-cols-3 sm:w-[60%] w-auto">
         {portfolioImages.map((data, idx) => {
@@ -32,6 +36,7 @@ export default function Portfolio() {
                   stiffness: 50,
                   damping: 12,
                 }}
+                viewport={{ once: true, amount: 0.5 }}
                 src={data.image}
                 alt={data.title}
               />

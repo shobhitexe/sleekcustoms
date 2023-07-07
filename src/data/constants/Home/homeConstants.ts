@@ -86,25 +86,28 @@ const imageBaseFooter: string = "/footer";
 
 export const footerData: FooterDataType = {
   pages: [
-    { title: "Home", link: "" },
-    { title: "About", link: "" },
-    { title: "Portfolio", link: "" },
-    { title: "Blog", link: "" },
-    { title: "Reviews", link: "" },
-    { title: "Deals", link: "" },
+    { title: "Home", link: "/" },
+    { title: "About", link: "/about" },
+    { title: "Portfolio", link: "/portfolio" },
+
+    { title: "Reviews", link: "/customer-reviews" },
   ],
   services: [
-    { title: "Detailing", link: "" },
-    { title: "Ceramic Coating", link: "" },
-    { title: "Paint correction", link: "" },
-    { title: "Clean Lab Aesthetics", link: "" },
+    { title: "Detailing", link: "premium-detail" },
+    { title: "Ceramic Coating", link: "ceramic-coating" },
+    { title: "Paint correction", link: "paint-correction" },
+    { title: "Paint Protection Film", link: "paint-protection" },
   ],
   misc: [
     { title: "Terms & Conditions", link: "" },
     { title: "FAQ", link: "" },
   ],
   socials: [
-    { title: "instagram", link: "", image: `${imageBaseFooter}/insta.png` },
+    {
+      title: "instagram",
+      link: "https://www.instagram.com/sleekcustomsgarage/",
+      image: `${imageBaseFooter}/insta.png`,
+    },
     { title: "facebook", link: "", image: `${imageBaseFooter}/facebook.png` },
   ],
 };

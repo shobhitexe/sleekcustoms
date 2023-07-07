@@ -2,6 +2,7 @@ import { navbarLinks } from "../data/constants/Home/homeConstants";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { openInNewTab } from "../Pages/OpenLinks";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -38,7 +39,12 @@ export default function Navbar() {
             </Link>
           );
         })}
-        <div className="bg-white md:px-10 px-8 py-1 cursor-pointer">
+        <div
+          className="bg-white md:px-10 px-8 py-1 cursor-pointer font-semibold"
+          onClick={() =>
+            openInNewTab("https://www.instagram.com/sleekcustomsgarage/")
+          }
+        >
           Book Now
         </div>
       </div>

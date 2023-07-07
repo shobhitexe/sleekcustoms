@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { linkType } from "../../data/constants/Home/homeTypes";
 
 type FooterLinksProps = {
@@ -13,12 +14,13 @@ export default function FooterLinks({ linkData, heading }: FooterLinksProps) {
       </h1>
       {linkData.map((data) => {
         return (
-          <div
+          <Link
             key={data.title}
-            className="text-white text-left ss:text-[11px] text-[9px] capitalize opacity-70 font-Montserrat cursor-"
+            to={data.link}
+            className="text-white text-left ss:text-[11px] text-[9px] capitalize opacity-70 font-Montserrat cursor-pointer"
           >
             {data.title}
-          </div>
+          </Link>
         );
       })}
     </div>

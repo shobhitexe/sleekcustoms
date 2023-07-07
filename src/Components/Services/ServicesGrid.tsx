@@ -1,4 +1,5 @@
 import { servicesGridData } from "../../data/constants/Services/servicesConstants";
+import { motion } from "framer-motion";
 
 export default function ServicesGrid() {
   return (
@@ -9,7 +10,18 @@ export default function ServicesGrid() {
             key={data.title}
             className="font-deluxe text-white flex py-16 px-5 justify-center flex-col items-center gap-5 border border-white border-opacity-20"
           >
-            <p className="md:text-[30px] text-[25px] break-all text-center">
+            <motion.p
+              initial={{ opacity: 0, translateY: "50px" }}
+              whileInView={{ opacity: 1, translateY: "0px" }}
+              transition={{
+                delay: 0.1,
+                duration: 0.5,
+                type: "spring",
+                stiffness: 60,
+              }}
+              viewport={{ once: true, amount: 0.5 }}
+              className="md:text-[30px] text-[25px] break-all text-center"
+            >
               {data.title === "DYNO SHIELD WINDSHIELD PROTECTANT" ? (
                 <span>
                   DYNO SHIELD WINDSHIELD <br /> PROTECTANT
@@ -17,8 +29,21 @@ export default function ServicesGrid() {
               ) : (
                 `${data.title}`
               )}
-            </p>
-            <p className="md:text-[20px] text-[15px]">{data.cost}</p>
+            </motion.p>
+            <motion.p
+              initial={{ opacity: 0, translateY: "50px" }}
+              whileInView={{ opacity: 1, translateY: "0px" }}
+              transition={{
+                delay: 0.2,
+                duration: 0.5,
+                type: "spring",
+                stiffness: 60,
+              }}
+              viewport={{ once: true, amount: 0.5 }}
+              className="md:text-[20px] text-[15px]"
+            >
+              {data.cost}
+            </motion.p>
           </div>
         );
       })}
