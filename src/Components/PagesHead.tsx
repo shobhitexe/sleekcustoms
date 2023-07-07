@@ -15,7 +15,7 @@ export default function PagesHead({
       <div className="bg-black bg-opacity-50">
         <div className="text-white font-deluxe pt-[300px] flex ss:flex-row flex-col items-center justify-around">
           <div className="flex flex-col relative sm:px-10 px-5">
-            <p className="md:text-[20px] sm:text-[15px] text-[12px] absolute">
+            <p className="md:text-[20px] sm:text-[15px] text-[12px] absolute sm:top-0 -top-2">
               {heading1}
             </p>
             <p className="md:text-[80px] sm:text-[50px] text-[40px]">

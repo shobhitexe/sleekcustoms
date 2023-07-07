@@ -5,7 +5,17 @@ import {
   ReviewComponent,
   PortfolioComponent,
 } from "./Components";
-import { Home, AutoDetailing, Reviews, Portfolio, Services } from "./Pages";
+import {
+  Home,
+  AutoDetailing,
+  Reviews,
+  Portfolio,
+  Services,
+  PaintCorrection,
+  CeramicCoating,
+  PaintProtection,
+  About,
+} from "./Pages";
 import { Fragment, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import { useLocation } from "react-router-dom";
@@ -27,6 +37,10 @@ function App() {
         <Route path="/customer-reviews" element={<Reviews />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/more-services" element={<Services />} />
+        <Route path="/paint-correction" element={<PaintCorrection />} />
+        <Route path="/ceramic-coating" element={<CeramicCoating />} />
+        <Route path="/paint-protection" element={<PaintProtection />} />
+        <Route path="/about" element={<About />} />
       </Routes>
 
       {currentPath !== "/" &&

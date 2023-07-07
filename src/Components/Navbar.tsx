@@ -70,6 +70,9 @@ export default function Navbar() {
                   to={nav.link}
                   key={nav.title}
                   className=" text-[2rem] cursor-pointer"
+                  onClick={() => {
+                    setIsOpen((prev) => !prev);
+                  }}
                 >
                   {" "}
                   {nav.title}

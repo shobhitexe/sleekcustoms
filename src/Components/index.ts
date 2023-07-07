@@ -13,9 +13,18 @@ import PagesHead from "./PagesHead";
 import ServicesGrid from "./Services/ServicesGrid";
 import PortfolioComponent from "./PortfolioComponent";
 import ReviewComponent from "./Reviews/ReviewComponent";
-import AutoDetailingMain from "./AutoDetailing/AutoDetailingMain";
+import ServicesPageMain from "./ServicesPageMain";
 import DetailingPackages from "./AutoDetailing/DetailingPackages";
 import DetailingAddons from "./AutoDetailing/DetailingAddons";
+import BenifitsComponent from "./CeramicCoating/BenifitsComponent";
+import CeramicDifference from "./CeramicCoating/CeramicDifference";
+import PricingComponent from "./PricingComponent";
+import CeramicPricing from "./CeramicCoating/CeramicPricing";
+import CeramicAddons from "./CeramicCoating/CeramicAddons";
+import ProtectionPackage from "./PaintProtection/ProtectionPackage";
+import AboutHead from "./About/AboutHead";
+import AboutParallex from "./About/AboutParallex";
+import AboutGrid from "./About/AboutGrid";
 
 export {
   Navbar,
@@ -33,7 +42,16 @@ export {
   ServicesGrid,
   PortfolioComponent,
   ReviewComponent,
-  AutoDetailingMain,
+  ServicesPageMain,
   DetailingPackages,
   DetailingAddons,
+  PricingComponent,
+  BenifitsComponent,
+  CeramicDifference,
+  CeramicPricing,
+  CeramicAddons,
+  ProtectionPackage,
+  AboutHead,
+  AboutParallex,
+  AboutGrid,
 };

@@ -19,6 +19,11 @@ export default {
         "contact-bg": "url('/contact/contact-bg.png')",
         "portfolio-head": "url('/portfolio/pf-head.png')",
         "auto-detailing-bg": "url('/autoDetailing/AD-bg.png')",
+        "paint-correction-bg": "url('/PaintCorrection/paintHead.png')",
+        "ceramic-coating-bg": "url('/CeramicCoating/CeramicCoatingMain.png')",
+        "ceramic-benifits-bg": "url('/ServicesComponent/AD-1.png')",
+        "paint-protection-bg": "url('/PaintProtection/paint.png')",
+        "about-main-bg": "url('/about/about-main.png')",
       },
       fontFamily: {
         Montserrat: ["Montserrat", "sans-serif"],

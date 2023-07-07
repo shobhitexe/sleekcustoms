@@ -9,7 +9,7 @@ import {
 
 export const navbarLinks: navLinksType[] = [
   { title: "Services", link: "more-services" },
-  { title: "About", link: "" },
+  { title: "About", link: "/about" },
   { title: "Portfolio", link: "portfolio" },
   { title: "Reviews", link: "customer-reviews" },
   // { title: "Blog", link: "" },
@@ -26,17 +26,17 @@ export const servicesData: servicesDataType[] = [
   {
     title: "CERAMIC COATING",
     image: `${imgBaseServices}/ceramic-coating.png`,
-    link: "",
+    link: "/ceramic-coating",
   },
   {
     title: "PAINT CORRECTION",
     image: `${imgBaseServices}/paint-correction.png`,
-    link: "",
+    link: "paint-correction",
   },
   {
     title: "PAINT PROTECTION FILMs",
     image: `${imgBaseServices}/paint-protection.png`,
-    link: "",
+    link: "/paint-protection",
   },
 ];
 
