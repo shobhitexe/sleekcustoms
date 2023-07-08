@@ -16,6 +16,7 @@ export default function Services() {
               stiffness: 100,
               damping: 10,
             }}
+            viewport={{ once: true, amount: 0.5 }}
             className="text-white text-[15px] font-semibold capitalize opacity-70 font-Montserrat z-10"
           >
             EXPERIENCE THE FINEST
@@ -29,6 +30,7 @@ export default function Services() {
               stiffness: 60,
               damping: 10,
             }}
+            viewport={{ once: true, amount: 0.5 }}
             className="text-white font-bold font-deluxe text-[40px] z-10"
           >
             SLEEK CUSTOM SERVICES

@@ -14,13 +14,6 @@ export type partnersImagesType = {
   image: string;
 };
 
-export type reviewsDataType = {
-  title: string;
-  description: string;
-  name: string;
-  logo: string;
-};
-
 export type portfolioImagesType = {
   title: string;
   image: string;

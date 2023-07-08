@@ -17,12 +17,13 @@ export default function ServicesGrid() {
                 stiffness: 50,
                 damping: 12,
               }}
+              viewport={{ once: true, amount: 0.5 }}
               src={data.image}
               className="rounded-lg"
               alt={data.title}
             />
             <div className="absolute rounded-b-lg bg-black bottom-0 w-full bg-opacity-70">
-              <p className="text-white ss:py-3 py-1 ss:px-5 px-3 font-bebas tracking-wider sm:text-[16px] ss:text-[15px] text-[12px]">
+              <p className="text-white ss:py-3 py-1 ss:px-5 px-3 font-bebas tracking-wider sm:text-[18px] ss:text-[17px] text-[14px]">
                 {data.title}
               </p>
             </div>

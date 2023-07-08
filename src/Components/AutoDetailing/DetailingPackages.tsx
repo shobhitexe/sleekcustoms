@@ -32,7 +32,7 @@ export default function DetailingPackages() {
               stiffness: 50,
             }}
             viewport={{ once: true, amount: 0.5 }}
-            className="sm:text-[40px] text-[20px]"
+            className="sm:text-[40px] text-[20px] font-semibold"
           >
             VIEW OUR DETAILING PACKAGES
           </motion.p>
@@ -89,21 +89,21 @@ export default function DetailingPackages() {
                   idx === 0 ? "px-0" : ""
                 }`}
               >
-                <ul className="block list-disc">
+                <ul className="block list-disc pl-2">
                   {data.pointers.map((points) => {
                     return idx === 0 ? (
                       <div className=" bg-cardsBg px-5 py-3 border-b border-white border-opacity-30">
                         {points}
                       </div>
                     ) : (
-                      <li className="text-[11px] py-1 font-Montserrat">
+                      <li className="text-[13px] py-1 font-Montserrat">
                         {points}
                       </li>
                     );
                   })}
                 </ul>
 
-                <p className=" font-Montserrat text-[11px] opacity-60 mt-5">
+                <p className=" font-Montserrat text-[12px] opacity-60 mt-5">
                   {data.other_info}
                 </p>
               </div>

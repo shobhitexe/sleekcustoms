@@ -30,7 +30,7 @@ export default function DetailingAddons() {
             stiffness: 50,
           }}
           viewport={{ once: true, amount: 0.5 }}
-          className="text-[40px] font-deluxe"
+          className="text-[40px] font-deluxe font-semibold"
         >
           ADDITIONAL PACKAGES
         </motion.h1>

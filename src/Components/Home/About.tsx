@@ -15,7 +15,7 @@ export default function About() {
         viewport={{ once: true, amount: 0.5 }}
         src="/about/PK.png"
         alt="pk"
-        className="ss:w-[20%] w-[25%]"
+        className="ss:w-[25%] w-[30%]"
       />
       <div className="flex flex-col justify-center">
         <motion.p
@@ -58,14 +58,15 @@ export default function About() {
           viewport={{ once: true, amount: 0.5 }}
           className="text-white text-left font-semibold md:text-[12px] sm:text-[10px] text-[6px] md:w-[500px] sm:w-[400px] xs:w-[300px] w-[250px] capitalize opacity-70 font-Montserrat"
         >
-          Sleek Customs is the finest automotive detailing and car care studio
-          in Houston, Texas. We specialize in paint protection film, nano
-          ceramic coatings, paint correction, high-end detailing and paintless
-          dent removal. Committed to customer satisfaction, our highly skilled
-          specialists utilize cutting-edge technology and techniques to yield
-          remarkable finishes and long term protection for each vehicle. We are
-          conveniently located in the Galleria area, visit us at 6261 Richmond
-          Avenue, Suite C, Houston, TX 77057.
+          Serving the need for extraordinary vehicle care in Glasgow. Bringing
+          your vehicle care, precision and great service to make sure it leaves
+          our detailing bay impressing the roads! <br />
+          <br /> We are experts in car exterior and interior surfaces. We pride
+          ourselves in using the best products and techniques available so your
+          vehicle is left Shining and impressing the Roads you are on!!! <br />
+          <br /> When you choose Sleek Customs, you choose the pinnacle of
+          automotive perfection, where passion, skill, and innovation converge
+          to create an experience that leaves a lasting impression.
         </motion.p>
       </div>
     </div>

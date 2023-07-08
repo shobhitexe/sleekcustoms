@@ -32,11 +32,11 @@ export default function Footer() {
           <FooterLinks linkData={footerData.services} heading="Services" />
           <FooterLinks linkData={footerData.misc} heading="Misc" />
           <div className="flex flex-col gap-1">
-            <h1 className="text-white font-Montserrat font-semibold text-[12px]">
+            <h1 className="text-white font-Montserrat font-semibold text-[13px]">
               Business info
             </h1>
             <p className="text-white text-left ss:text-[11px] text-[9px] md:w-[300px] sm:w-[250px] ss:w-auto w-[180px] capitalize opacity-70 font-Montserrat">
-              <span className="text-white text-left ss:text-[11px] text-[9px] capitalize opacity-70 font-Montserrat font-semibold">
+              <span className="text-white text-left ss:text-[12px] text-[10px] capitalize opacity-70 font-Montserrat font-semibold">
                 Address:{" "}
               </span>
               Unit 138, Atlas Industrial Estate, 1 Rutherglen Road, Rutherglen,

@@ -69,6 +69,7 @@ export default function Partners() {
                 alt={data.alt}
                 className="lg:w-[250px] md:h-[70px] sm:h-[60px] ss:h-[50px] xs:h-[40px] h-[30px] sm:w-[180px] ss:w-[150px] xs:w-[120px] w-[100px]"
               />
+              // lg:w-[250px] md:h-[70px] sm:h-[60px] ss:h-[50px] xs:h-[40px] h-[30px] sm:w-[180px] ss:w-[150px] xs:w-[120px] w-[100px]
             );
           })}
         </div>

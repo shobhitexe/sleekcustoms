@@ -2,7 +2,6 @@ import {
   navLinksType,
   servicesDataType,
   partnersImagesType,
-  reviewsDataType,
   portfolioImagesType,
   FooterDataType,
 } from "./homeTypes";
@@ -10,8 +9,8 @@ import {
 export const navbarLinks: navLinksType[] = [
   { title: "Services", link: "more-services" },
   { title: "About", link: "/about" },
-  { title: "Portfolio", link: "portfolio" },
-  { title: "Reviews", link: "customer-reviews" },
+  { title: "Portfolio", link: "/portfolio" },
+  { title: "Reviews", link: "/customer-reviews" },
   // { title: "Blog", link: "" },
 ];
 
@@ -21,7 +20,7 @@ export const servicesData: servicesDataType[] = [
   {
     title: "AUTO DETAILING",
     image: `${imgBaseServices}/detailing.png`,
-    link: "premium-detail",
+    link: "/premium-detail",
   },
   {
     title: "CERAMIC COATING",
@@ -31,7 +30,7 @@ export const servicesData: servicesDataType[] = [
   {
     title: "PAINT CORRECTION",
     image: `${imgBaseServices}/paint-correction.png`,
-    link: "paint-correction",
+    link: "/paint-correction",
   },
   {
     title: "PAINT PROTECTION FILMs",
@@ -46,29 +45,6 @@ export const partnersImages: partnersImagesType[] = [
   { alt: "Onyx", image: `${imgBasePartners}/Onyx_Logo.png` },
   { alt: "Kamikaze", image: `${imgBasePartners}/Kamikaze.png` },
   { alt: "Avery", image: `${imgBasePartners}/Avery.png` },
-];
-
-const imageBaseReviews: string = "/reviews/google.png";
-
-export const reviewsData: reviewsDataType[] = [
-  {
-    title: "Worth the wait.",
-    description: `Sleek Customs has been on my Rolodex for years. I finally pulled the trigger and to my pleasant surprise the ceramic coating was more than I could have ever expected. The team was quick, pleasant, and gone before I could say thank you a second time.`,
-    name: "Ray F 22' GT3RS",
-    logo: `${imageBaseReviews}`,
-  },
-  {
-    title: "Worth the wait.",
-    description: `Sleek Customs has been on my Rolodex for years. I finally pulled the trigger and to my pleasant surprise the ceramic coating was more than I could have ever expected. The team was quick, pleasant, and gone before I could say thank you a second time.`,
-    name: "Ray F 22' GT3RS",
-    logo: `${imageBaseReviews}`,
-  },
-  {
-    title: "Worth the wait.",
-    description: `Sleek Customs has been on my Rolodex for years. I finally pulled the trigger and to my pleasant surprise the ceramic coating was more than I could have ever expected. The team was quick, pleasant, and gone before I could say thank you a second time.`,
-    name: "Ray F 22' GT3RS",
-    logo: `${imageBaseReviews}`,
-  },
 ];
 
 const imageBasePortfolio: string = "/portfolio";
@@ -93,10 +69,10 @@ export const footerData: FooterDataType = {
     { title: "Reviews", link: "/customer-reviews" },
   ],
   services: [
-    { title: "Detailing", link: "premium-detail" },
-    { title: "Ceramic Coating", link: "ceramic-coating" },
-    { title: "Paint correction", link: "paint-correction" },
-    { title: "Paint Protection Film", link: "paint-protection" },
+    { title: "Detailing", link: "/premium-detail" },
+    { title: "Ceramic Coating", link: "/ceramic-coating" },
+    { title: "Paint correction", link: "/paint-correction" },
+    { title: "Paint Protection Film", link: "/paint-protection" },
   ],
   misc: [
     { title: "Terms & Conditions", link: "" },
@@ -108,6 +84,10 @@ export const footerData: FooterDataType = {
       link: "https://www.instagram.com/sleekcustomsgarage/",
       image: `${imageBaseFooter}/insta.png`,
     },
-    { title: "facebook", link: "", image: `${imageBaseFooter}/facebook.png` },
+    {
+      title: "facebook",
+      link: "https://www.facebook.com/SleekCustomsGarage",
+      image: `${imageBaseFooter}/facebook.png`,
+    },
   ],
 };

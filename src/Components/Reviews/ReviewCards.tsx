@@ -1,36 +1,84 @@
-import { reviewsData } from "../../data/constants/Home/homeConstants";
+import { motion } from "framer-motion";
+import { openInNewTab } from "../../Pages/OpenLinks";
+import { reviewsData } from "../../data/constants/Reviews/ReviewConstants";
 
-export default function ReviewCards() {
+type ReviewCardsProps = {
+  max?: number;
+};
+
+export default function ReviewCards({
+  max = reviewsData.length,
+}: ReviewCardsProps) {
+  const googleImage: string = `/reviews/google.svg`;
+  const startImage: string = `/reviews/star.png`;
+  const reviewsArr: number[] = [1, 2, 3, 4, 5];
+
   return (
-    <div className="flex flex-col gap-5">
-      <div className="bg-cardsBg py-3 px-5 rounded-lg w-[80%] mx-auto flex items-center relative">
-        <div className="gap-2 flex">
-          <div className="border-b-2 absolute bottom-0 w-[120px]"></div>
-          <img src="/reviews/google.png" alt="google" />
-          <p className="font-Montserrat text-white">
-            Google <span className=" font-semibold">5.0</span>
-          </p>
-        </div>
-      </div>
-      <div className="flex gap-10 justify-center flex-wrap">
-        {reviewsData.map((data, idx) => {
-          return (
-            <div
-              key={idx}
-              className="flex flex-col bg-cardsBg gap-5 ss:w-[400px] w-[80%] p-5 rounded-2xl"
-            >
-              <h1 className="text-white font-Montserrat">{data.title}</h1>
-              <p className="text-white text-[11px] capitalize opacity-70 font-Montserrat">
-                {data.description}
-              </p>
-              <div className="flex justify-between">
-                <p className="text-white">{data.name}</p>
-                <img src={data.logo} alt={data.name} />
+    <div className="flex justify-center gap-10 flex-wrap">
+      {reviewsData.map((data, idx) => {
+        if (idx + 1 > max) return;
+
+        const descCut = data.description.split(" ").slice(0, 20);
+        const formattedDesc = descCut.join(` `) + " " + "....";
+        return (
+          <motion.div
+            initial={{ opacity: 0, translateY: "50px" }}
+            whileInView={{ opacity: 1, translateY: "0px" }}
+            transition={{
+              delay: 0.1,
+              duration: 0.5,
+              type: "spring",
+              stiffness: 60,
+            }}
+            viewport={{ once: true, amount: 0.5 }}
+            className="flex flex-col w-[250px] cursor-pointer"
+            onClick={() => openInNewTab(data.link)}
+          >
+            <div className="flex flex-col bg-cardsBg p-5 rounded-3xl gap-5 ">
+              <div className="flex">
+                {reviewsArr.map((data, idx) => {
+                  return (
+                    <motion.img
+                      initial={{ opacity: 0, translateY: "20px" }}
+                      whileInView={{ opacity: 1, translateY: "0px" }}
+                      transition={{
+                        delay: 0.4 * idx,
+                        duration: 0.5,
+                        type: "spring",
+                        stiffness: 60,
+                      }}
+                      viewport={{ once: true, amount: 0.5 }}
+                      src={startImage}
+                      alt={`star-${data}`}
+                      key={data}
+                    />
+                  );
+                })}
               </div>
+              <div className="flex flex-col gap-1">
+                <p className="text-white font-Montserrat text-[14px]">
+                  {formattedDesc}
+                </p>
+                <p className=" font-Montserrat text-white text-[14px] opacity-70">
+                  Read more
+                </p>
+              </div>
+              <img
+                src={googleImage}
+                alt="google"
+                className="w-[20%] rounded-full"
+              />
             </div>
-          );
-        })}
-      </div>
+
+            <div className="flex items-center p-5 gap-2">
+              <img src={data.profileImage} alt="profile" className="w-[45px]" />
+              <p className="text-white font-Montserrat text-[15px] ">
+                {data.name}
+              </p>
+            </div>
+          </motion.div>
+        );
+      })}
     </div>
   );
 }

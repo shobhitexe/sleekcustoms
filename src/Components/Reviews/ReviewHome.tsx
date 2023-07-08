@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import ReviewCards from "./ReviewCards";
+import { Link } from "react-router-dom";
 
 export default function ReviewHome() {
   return (
@@ -14,6 +15,7 @@ export default function ReviewHome() {
             stiffness: 60,
             damping: 10,
           }}
+          viewport={{ once: true, amount: 0.5 }}
           className="text-white text-center font-semibold text-[20px] capitalize opacity-70 font-Montserrat"
         >
           REVIEWS
@@ -27,15 +29,19 @@ export default function ReviewHome() {
             stiffness: 60,
             damping: 10,
           }}
+          viewport={{ once: true, amount: 0.5 }}
           className=" text-white font-bold text-[50px] text-center font-deluxe"
         >
           DELIVERING SATISFACTION
         </motion.h1>
       </div>
-      <ReviewCards />
-      <div className=" bg-cardsBg text-white py-1 px-10 w-fit mx-auto font-Montserrat cursor-pointer">
+      <ReviewCards max={5} />
+      <Link
+        to={"/customer-reviews"}
+        className=" bg-cardsBg text-white py-1 px-10 w-fit mx-auto font-Montserrat cursor-pointer"
+      >
         VIEW MORE
-      </div>
+      </Link>
     </div>
   );
 }

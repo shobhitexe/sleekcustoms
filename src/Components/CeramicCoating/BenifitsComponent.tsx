@@ -73,7 +73,7 @@ export default function BenifitsComponent({
           })}
         </div>
       </div>
-      <div className="bg-ceramic-benifits-bg grid bg-cover bg-center bg-fixed grid-cols-2 items-center sm:w-[50%] w-[100%] sm:py-0 py-10 sm:absolute right-0 h-full">
+      <div className="bg-ceramic-benifits-bg grid bg-cover bg-center grid-cols-2 items-center sm:w-[50%] w-[100%] sm:py-0 py-10 sm:absolute right-0 h-full">
         {gridArr.map((grid, idx) => {
           return (
             <motion.div

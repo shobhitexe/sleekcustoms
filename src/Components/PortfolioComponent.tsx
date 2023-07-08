@@ -30,7 +30,7 @@ export default function PortfolioComponent() {
               stiffness: 60,
             }}
             viewport={{ once: true, amount: 0.5 }}
-            className="sm:text-[40px] text-[30px]"
+            className="sm:text-[40px] text-[30px] font-semibold"
           >
             SEE THE RESULTS FOR YOURSELF
           </motion.p>
