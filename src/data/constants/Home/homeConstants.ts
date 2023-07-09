@@ -50,12 +50,12 @@ export const partnersImages: partnersImagesType[] = [
 const imageBasePortfolio: string = "/portfolio";
 
 export const portfolioImages: portfolioImagesType[] = [
-  { title: "", image: `${imageBasePortfolio}/bmw.webp` },
-  { title: "ducati", image: `${imageBasePortfolio}/ducati.webp` },
-  { title: "porshe", image: `${imageBasePortfolio}/porshe-3.webp` },
-  { title: "porshe", image: `${imageBasePortfolio}/porshe-red.webp` },
-  { title: "porshe", image: `${imageBasePortfolio}/porshe.webp` },
-  { title: "porshe", image: `${imageBasePortfolio}/porshe-2.webp` },
+  { title: "", image: `${imageBasePortfolio}/pf-1.webp` },
+  { title: "ducati", image: `${imageBasePortfolio}/pf-2.webp` },
+  { title: "porshe", image: `${imageBasePortfolio}/pf-3.webp` },
+  { title: "porshe", image: `${imageBasePortfolio}/pf-4.webp` },
+  { title: "porshe", image: `${imageBasePortfolio}/pf-5.webp` },
+  { title: "porshe", image: `${imageBasePortfolio}/pf-6.webp` },
 ];
 
 const imageBaseFooter: string = "/footer";

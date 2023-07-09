@@ -20,6 +20,7 @@ export default function Navbar() {
               type: "spring",
               stiffness: 60,
             }}
+            rel="preload"
             src="/SC-Logo-1.svg"
             className="sm:w-28 ss:w-24 w-20 sm:h-28 ss:h-24 h-20 z-20 bg-black p-2 rounded-full bg-opacity-50"
             alt="logo"
