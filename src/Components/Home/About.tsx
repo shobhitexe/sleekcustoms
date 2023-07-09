@@ -13,7 +13,7 @@ export default function About() {
           damping: 10,
         }}
         viewport={{ once: true, amount: 0.5 }}
-        src="/about/PK.png"
+        src="/about/PK.webp"
         alt="pk"
         className="ss:w-[25%] w-[30%]"
       />

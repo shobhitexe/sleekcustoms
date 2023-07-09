@@ -1,11 +1,11 @@
 import { paintCorrectionPackagedataType } from "./paintCorrectionTypes";
 
 export const paintCorrectionMainImagesData: string[] = [
-  "AD-1.png",
-  "AD-2.png",
-  "paintCorrection.png",
-  "AD-4.png",
-  "AD-5.png",
+  "AD-1.webp",
+  "AD-2.webp",
+  "paintCorrection.webp",
+  "AD-4.webp",
+  "AD-5.webp",
 ];
 
 export const paintCorrectionPackagedata: paintCorrectionPackagedataType[] = [

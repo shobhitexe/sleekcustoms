@@ -21,9 +21,9 @@ export const aboutparallexScrollableDivs: aboutparallexScrollableDivsType[] = [
 const aboutGridImagesBase: string = "/about";
 
 export const aboutGridImagesData: string[] = [
-  `${aboutGridImagesBase}/about-3.png`,
-  `${aboutGridImagesBase}/about-4.png`,
-  `${aboutGridImagesBase}/about-5.png`,
-  `${aboutGridImagesBase}/about-6.png`,
-  `${aboutGridImagesBase}/about-7.png`,
+  `${aboutGridImagesBase}/about-3.webp`,
+  `${aboutGridImagesBase}/about-4.webp`,
+  `${aboutGridImagesBase}/about-5.webp`,
+  `${aboutGridImagesBase}/about-6.webp`,
+  `${aboutGridImagesBase}/about-7.webp`,
 ];

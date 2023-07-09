@@ -1,9 +1,9 @@
 export const PaintProtectionMainImagesData: string[] = [
-  "AD-1.png",
-  "AD-2.png",
-  "AD-3.png",
-  "AD-4.png",
-  "AD-5.png",
+  "AD-1.webp",
+  "AD-2.webp",
+  "AD-3.webp",
+  "AD-4.webp",
+  "AD-5.webp",
 ];
 
 export const PaintProtectionBenifitsPointers: string[] = [

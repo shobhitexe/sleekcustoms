@@ -74,7 +74,7 @@ export default function CeramicDifference() {
           stiffness: 60,
         }}
         viewport={{ once: true, amount: 0.5 }}
-        src="/CeramicCoating/graph.png"
+        src="/CeramicCoating/graph.webp"
         alt="graph"
         className=" object-contain w-[50%]"
       />

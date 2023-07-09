@@ -16,7 +16,7 @@ export default function AboutParallex() {
             stiffness: 60,
           }}
           viewport={{ once: true, amount: 0.5 }}
-          src="/about/about-2.png"
+          src="/about/about-2.webp"
           alt="about-2"
           className=""
         />

@@ -19,22 +19,22 @@ const imgBaseServices: string = "/services";
 export const servicesData: servicesDataType[] = [
   {
     title: "AUTO DETAILING",
-    image: `${imgBaseServices}/detailing.png`,
+    image: `${imgBaseServices}/detailing.webp`,
     link: "/premium-detail",
   },
   {
     title: "CERAMIC COATING",
-    image: `${imgBaseServices}/ceramic-coating.png`,
+    image: `${imgBaseServices}/ceramic-coating.webp`,
     link: "/ceramic-coating",
   },
   {
     title: "PAINT CORRECTION",
-    image: `${imgBaseServices}/paint-correction.png`,
+    image: `${imgBaseServices}/paint-correction.webp`,
     link: "/paint-correction",
   },
   {
     title: "PAINT PROTECTION FILMs",
-    image: `${imgBaseServices}/paint-protection.png`,
+    image: `${imgBaseServices}/paint-protection.webp`,
     link: "/paint-protection",
   },
 ];
@@ -42,20 +42,20 @@ export const servicesData: servicesDataType[] = [
 const imgBasePartners: string = "/partners";
 
 export const partnersImages: partnersImagesType[] = [
-  { alt: "Onyx", image: `${imgBasePartners}/Onyx_Logo.png` },
-  { alt: "Kamikaze", image: `${imgBasePartners}/Kamikaze.png` },
-  { alt: "Avery", image: `${imgBasePartners}/Avery.png` },
+  { alt: "Onyx", image: `${imgBasePartners}/Onyx_Logo.webp` },
+  { alt: "Kamikaze", image: `${imgBasePartners}/Kamikaze.webp` },
+  { alt: "Avery", image: `${imgBasePartners}/Avery.webp` },
 ];
 
 const imageBasePortfolio: string = "/portfolio";
 
 export const portfolioImages: portfolioImagesType[] = [
-  { title: "", image: `${imageBasePortfolio}/bmw.png` },
-  { title: "ducati", image: `${imageBasePortfolio}/ducati.png` },
-  { title: "porshe", image: `${imageBasePortfolio}/porshe-3.png` },
-  { title: "porshe", image: `${imageBasePortfolio}/porshe-red.png` },
-  { title: "porshe", image: `${imageBasePortfolio}/porshe.png` },
-  { title: "porshe", image: `${imageBasePortfolio}/porshe-2.png` },
+  { title: "", image: `${imageBasePortfolio}/bmw.webp` },
+  { title: "ducati", image: `${imageBasePortfolio}/ducati.webp` },
+  { title: "porshe", image: `${imageBasePortfolio}/porshe-3.webp` },
+  { title: "porshe", image: `${imageBasePortfolio}/porshe-red.webp` },
+  { title: "porshe", image: `${imageBasePortfolio}/porshe.webp` },
+  { title: "porshe", image: `${imageBasePortfolio}/porshe-2.webp` },
 ];
 
 const imageBaseFooter: string = "/footer";
@@ -82,12 +82,12 @@ export const footerData: FooterDataType = {
     {
       title: "instagram",
       link: "https://www.instagram.com/sleekcustomsgarage/",
-      image: `${imageBaseFooter}/insta.png`,
+      image: `${imageBaseFooter}/insta.webp`,
     },
     {
       title: "facebook",
       link: "https://www.facebook.com/SleekCustomsGarage",
-      image: `${imageBaseFooter}/facebook.png`,
+      image: `${imageBaseFooter}/facebook.webp`,
     },
   ],
 };

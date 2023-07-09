@@ -89,7 +89,7 @@ export default function BenifitsComponent({
               className="flex flex-col items-center gap-3"
               key={grid}
             >
-              <img src="/CeramicCoating/diamond.png" alt="diamond" />
+              <img src="/CeramicCoating/diamond.webp" alt="diamond" />
               <h1 className="text-white font-deluxe text-[16px]">{grid}</h1>
             </motion.div>
           );

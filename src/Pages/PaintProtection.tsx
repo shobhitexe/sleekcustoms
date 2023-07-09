@@ -20,7 +20,7 @@ export default function PaintProtection() {
         heading2="PAINT PROTECTION FILM"
       />
       <ServicesPageMain
-        defaultImage="AD-3.png"
+        defaultImage="AD-3.webp"
         arrImages={PaintProtectionMainImagesData}
         heading="AN INVISIBLE LAYER OF CAR PROTECTION THAT SAVES YOU MONEY"
         paragraph={`Clear Bra, also known as paint protection film, offers the protection your vehicle needs from the harsh and damaging Glasgow area elements. Whether it's road salt in the winter or insects and tree sap in the summer, our clear bra provides superior protection. Clear Bra is the king of defense against rock chips, oxidation, scratches, bird droppings, and sand. The film goes on clear and never compromises style. That means you can drive all over the city in style while simultaneously protecting your vehicle. Come check out the stain resistant and self-healing properties of our clear bra today!`}

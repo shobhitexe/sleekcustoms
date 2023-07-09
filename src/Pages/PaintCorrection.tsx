@@ -14,7 +14,7 @@ export default function PaintCorrection() {
         heading2="PAINT CORRECTION"
       />
       <ServicesPageMain
-        defaultImage="paintCorrection.png"
+        defaultImage="paintCorrection.webp"
         arrImages={paintCorrectionMainImagesData}
         heading="RESTORE TO PERFECTION"
         paragraph="At Sleek Customs, we take immense pride in our unrivaled expertise and dedication to the art of car paint correction. With meticulous attention to detail and a passion for perfection, we have earned a distinguished reputation as the go-to destination for automotive enthusiasts seeking flawless finishes. Our team of skilled craftsmen possesses a deep understanding of the intricacies involved in restoring and enhancing the luster of your beloved vehicles. From minor blemishes to extensive paint imperfections, we apply cutting-edge techniques and industry-leading products to transform your car's appearance, leaving it looking immaculate and radiant."

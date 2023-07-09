@@ -10,7 +10,7 @@ export default function ReviewCards({
   max = reviewsData.length,
 }: ReviewCardsProps) {
   const googleImage: string = `/reviews/google.svg`;
-  const startImage: string = `/reviews/star.png`;
+  const startImage: string = `/reviews/star.webp`;
   const reviewsArr: number[] = [1, 2, 3, 4, 5];
 
   return (

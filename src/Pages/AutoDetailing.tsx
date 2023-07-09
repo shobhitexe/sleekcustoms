@@ -16,7 +16,7 @@ export default function AutoDetailing() {
         heading2="AUTO DETAILING"
       />
       <ServicesPageMain
-        defaultImage="AD-3.png"
+        defaultImage="AD-3.webp"
         arrImages={autoDetailingMainImagesData}
         heading="COMPLETE AUTO DETAILING"
         paragraph={`At Sleek Customs, located in the prestigious Atlas Industrial Estate

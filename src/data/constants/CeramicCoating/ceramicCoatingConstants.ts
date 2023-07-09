@@ -1,11 +1,11 @@
 import { CeramicCoatingPackagedataType } from "./ceramicCoatingTypes";
 
 export const ceramicCoatingMainImagesData: string[] = [
-  "AD-1.png",
-  "AD-2.png",
-  "CeramicCoatingDefault.png",
-  "AD-4.png",
-  "AD-5.png",
+  "AD-1.webp",
+  "AD-2.webp",
+  "CeramicCoatingDefault.webp",
+  "AD-4.webp",
+  "AD-5.webp",
 ];
 
 export const ceramicCoatingBenifitsPointers: string[] = [
