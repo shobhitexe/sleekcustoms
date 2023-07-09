@@ -15,70 +15,76 @@ export default function ReviewCards({
 
   return (
     <div className="flex justify-center gap-10 flex-wrap">
-      {reviewsData.map((data, idx) => {
-        if (idx + 1 > max) return;
+      {reviewsData
+        .sort(() => 0.5 - Math.random())
+        .map((data, idx) => {
+          if (idx + 1 > max) return;
 
-        const descCut = data.description.split(" ").slice(0, 20);
-        const formattedDesc = descCut.join(` `) + " " + "....";
-        return (
-          <motion.div
-            initial={{ opacity: 0, translateY: "50px" }}
-            whileInView={{ opacity: 1, translateY: "0px" }}
-            transition={{
-              delay: 0.1,
-              duration: 0.5,
-              type: "spring",
-              stiffness: 60,
-            }}
-            viewport={{ once: true, amount: 0.5 }}
-            className="flex flex-col w-[250px] cursor-pointer"
-            onClick={() => openInNewTab(data.link)}
-          >
-            <div className="flex flex-col bg-cardsBg p-5 rounded-3xl gap-5 ">
-              <div className="flex">
-                {reviewsArr.map((data, idx) => {
-                  return (
-                    <motion.img
-                      initial={{ opacity: 0, translateY: "20px" }}
-                      whileInView={{ opacity: 1, translateY: "0px" }}
-                      transition={{
-                        delay: 0.4 * idx,
-                        duration: 0.5,
-                        type: "spring",
-                        stiffness: 60,
-                      }}
-                      viewport={{ once: true, amount: 0.5 }}
-                      src={startImage}
-                      alt={`star-${data}`}
-                      key={data}
-                    />
-                  );
-                })}
+          const descCut = data.description.split(" ").slice(0, 20);
+          const formattedDesc = descCut.join(` `) + " " + "....";
+          return (
+            <motion.div
+              initial={{ opacity: 0, translateY: "50px" }}
+              whileInView={{ opacity: 1, translateY: "0px" }}
+              transition={{
+                delay: 0.1,
+                duration: 0.5,
+                type: "spring",
+                stiffness: 60,
+              }}
+              viewport={{ once: true, amount: 0.5 }}
+              className="flex flex-col w-[250px] cursor-pointer"
+              onClick={() => openInNewTab(data.link)}
+            >
+              <div className="flex flex-col bg-cardsBg p-5 rounded-3xl gap-5 ">
+                <div className="flex">
+                  {reviewsArr.map((data, idx) => {
+                    return (
+                      <motion.img
+                        initial={{ opacity: 0, translateY: "20px" }}
+                        whileInView={{ opacity: 1, translateY: "0px" }}
+                        transition={{
+                          delay: 0.4 * idx,
+                          duration: 0.5,
+                          type: "spring",
+                          stiffness: 60,
+                        }}
+                        viewport={{ once: true, amount: 0.5 }}
+                        src={startImage}
+                        alt={`star-${data}`}
+                        key={data}
+                      />
+                    );
+                  })}
+                </div>
+                <div className="flex flex-col gap-1">
+                  <p className="text-white font-Montserrat text-[14px]">
+                    {formattedDesc}
+                  </p>
+                  <p className=" font-Montserrat text-white text-[14px] opacity-70">
+                    Read more
+                  </p>
+                </div>
+                <img
+                  src={googleImage}
+                  alt="google"
+                  className="w-[20%] rounded-full"
+                />
               </div>
-              <div className="flex flex-col gap-1">
-                <p className="text-white font-Montserrat text-[14px]">
-                  {formattedDesc}
-                </p>
-                <p className=" font-Montserrat text-white text-[14px] opacity-70">
-                  Read more
-                </p>
-              </div>
-              <img
-                src={googleImage}
-                alt="google"
-                className="w-[20%] rounded-full"
-              />
-            </div>
 
-            <div className="flex items-center p-5 gap-2">
-              <img src={data.profileImage} alt="profile" className="w-[45px]" />
-              <p className="text-white font-Montserrat text-[15px] ">
-                {data.name}
-              </p>
-            </div>
-          </motion.div>
-        );
-      })}
+              <div className="flex items-center p-5 gap-2">
+                <img
+                  src={data.profileImage}
+                  alt="profile"
+                  className="w-[45px]"
+                />
+                <p className="text-white font-Montserrat text-[15px] ">
+                  {data.name}
+                </p>
+              </div>
+            </motion.div>
+          );
+        })}
     </div>
   );
 }
