@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { openInNewTab } from "../Pages/OpenLinks";
+import { Link as ScrollLink } from "react-scroll";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -31,13 +32,28 @@ export default function Navbar() {
       <div className="sm:flex hidden md:gap-5 gap-3 items-center">
         {navbarLinks.map((nav) => {
           return (
-            <Link
-              to={nav.link}
-              className="text-white opacity-70 cursor-pointer md:text-[16px] text-[14px] hover:opacity-100"
-              key={nav.title}
-            >
-              {nav.title}
-            </Link>
+            <div key={nav.title}>
+              {nav.title === "Services" && window.location.pathname === "/" ? (
+                <ScrollLink
+                  to={"services"}
+                  smooth={true}
+                  duration={100}
+                  offset={-70}
+                  spy={true}
+                  activeClass="active"
+                  className="text-white opacity-70 cursor-pointer md:text-[16px] text-[14px] hover:opacity-100"
+                >
+                  {nav.title}
+                </ScrollLink>
+              ) : (
+                <Link
+                  to={nav.link}
+                  className="text-white opacity-70 cursor-pointer md:text-[16px] text-[14px] hover:opacity-100"
+                >
+                  {nav.title}
+                </Link>
+              )}
+            </div>
           );
         })}
         <div
@@ -73,17 +89,36 @@ export default function Navbar() {
           <div className="flex flex-col justify-center items-center gap-5 mt-10">
             {navbarLinks.map((nav) => {
               return (
-                <Link
-                  to={nav.link}
-                  key={nav.title}
-                  className=" text-[2rem] cursor-pointer"
-                  onClick={() => {
-                    setIsOpen((prev) => !prev);
-                  }}
-                >
-                  {" "}
-                  {nav.title}
-                </Link>
+                <div key={nav.title}>
+                  {nav.title === "Services" &&
+                  window.location.pathname === "/" ? (
+                    <ScrollLink
+                      to={"services"}
+                      smooth={true}
+                      duration={100}
+                      offset={-70}
+                      spy={true}
+                      activeClass="active"
+                      className=" text-[2rem] cursor-pointer"
+                      onClick={() => {
+                        setIsOpen((prev) => !prev);
+                      }}
+                    >
+                      {nav.title}
+                    </ScrollLink>
+                  ) : (
+                    <Link
+                      to={nav.link}
+                      className=" text-[2rem] cursor-pointer"
+                      onClick={() => {
+                        setIsOpen((prev) => !prev);
+                      }}
+                    >
+                      {" "}
+                      {nav.title}
+                    </Link>
+                  )}
+                </div>
               );
             })}
           </div>

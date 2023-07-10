@@ -47,7 +47,7 @@ export default function About() {
           SLEEK CUSTOMS | EST. 2020
         </motion.p>
         <motion.p
-          initial={{ opacity: 0, translateY: "50%" }}
+          initial={{ opacity: 0, translateY: "30%" }}
           whileInView={{ opacity: 1, translateY: "0%" }}
           transition={{
             delay: 0.2,

@@ -1,10 +1,10 @@
 import { servicesGridDataType } from "./servicesTypes";
 
 export const servicesGridData: servicesGridDataType[] = [
-  { title: "ENGINE BAY DETAIL", cost: "$80" },
-  { title: "CALIPER PAINT", cost: "$700+" },
-  { title: "POWER COATED WHEELS", cost: "$900+" },
-  { title: `DYNO SHIELD WINDSHIELD PROTECTANT`, cost: "$600+" },
+  { title: "ENGINE BAY DETAIL", cost: "£80" },
+  { title: "QUICK WASH", cost: "£40" },
+  { title: "MAINTENANCE WASH", cost: "£50" },
+  { title: `CUSTOM WASH / DETAILING`, cost: "PRICE ON CALL" },
 ];
 
 export const servicesPortfolioData = [

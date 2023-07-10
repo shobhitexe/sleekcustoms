@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { openInNewTab } from "../../Pages/OpenLinks";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   const buttonClasses: string =
@@ -64,19 +65,21 @@ export default function Hero() {
           >
             Book Today
           </motion.div>
-          <motion.div
-            initial={{ opacity: 0, translateY: "50%" }}
-            whileInView={{ opacity: 1, translateY: "0%" }}
-            transition={{
-              delay: 0.4,
-              type: "spring",
-              stiffness: 40,
-            }}
-            viewport={{ once: true, amount: 0.5 }}
-            className={`${buttonClasses} bg-opacity-20 text-white`}
-          >
-            View services
-          </motion.div>
+          <Link to={"/more-services"}>
+            <motion.div
+              initial={{ opacity: 0, translateY: "50%" }}
+              whileInView={{ opacity: 1, translateY: "0%" }}
+              transition={{
+                delay: 0.4,
+                type: "spring",
+                stiffness: 40,
+              }}
+              viewport={{ once: true, amount: 0.5 }}
+              className={`${buttonClasses} bg-opacity-20 text-white`}
+            >
+              View services
+            </motion.div>
+          </Link>
         </div>
       </motion.div>
     </div>

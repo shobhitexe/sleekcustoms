@@ -56,6 +56,7 @@ export default function DetailingPackages() {
                 type: "spring",
                 stiffness: 60 - stiff,
               }}
+              key={idx}
               viewport={{ once: true, amount: 0.5 }}
               className={`text-white flex flex-col sm:w-[350px] w-full border h-fit border-white border-opacity-30 shadow-sm shadow-white`}
             >

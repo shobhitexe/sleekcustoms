@@ -23,6 +23,7 @@ export default function PricingComponent({
               type: "spring",
               stiffness: 60 - stiff,
             }}
+            key={idx}
             viewport={{ once: true, amount: 0.5 }}
             className="text-white font-Montserrat flex flex-col sm:w-[50%] border h-fit"
           >

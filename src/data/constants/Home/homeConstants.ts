@@ -7,7 +7,7 @@ import {
 } from "./homeTypes";
 
 export const navbarLinks: navLinksType[] = [
-  { title: "Services", link: "more-services" },
+  { title: "Services", link: "/#services" },
   { title: "About", link: "/about" },
   { title: "Portfolio", link: "/portfolio" },
   { title: "Reviews", link: "/customer-reviews" },
@@ -50,12 +50,12 @@ export const partnersImages: partnersImagesType[] = [
 const imageBasePortfolio: string = "/portfolio";
 
 export const portfolioImages: portfolioImagesType[] = [
-  { title: "", image: `${imageBasePortfolio}/pf-1.webp` },
-  { title: "ducati", image: `${imageBasePortfolio}/pf-2.webp` },
-  { title: "porshe", image: `${imageBasePortfolio}/pf-3.webp` },
-  { title: "porshe", image: `${imageBasePortfolio}/pf-4.webp` },
-  { title: "porshe", image: `${imageBasePortfolio}/pf-5.webp` },
-  { title: "porshe", image: `${imageBasePortfolio}/pf-6.webp` },
+  { title: "Tesla", image: `${imageBasePortfolio}/pf-1.webp` },
+  { title: "BMW", image: `${imageBasePortfolio}/pf-2.webp` },
+  { title: "Genesis", image: `${imageBasePortfolio}/pf-3.webp` },
+  { title: "Ford", image: `${imageBasePortfolio}/pf-4.webp` },
+  { title: "Toyota", image: `${imageBasePortfolio}/pf-5.webp` },
+  { title: "Lexus", image: `${imageBasePortfolio}/pf-6.webp` },
 ];
 
 const imageBaseFooter: string = "/footer";

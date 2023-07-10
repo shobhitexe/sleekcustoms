@@ -29,6 +29,7 @@ export default function AboutParallex() {
               heading={data.heading}
               subHeading={data.subHeading}
               desc={data.desc}
+              key={data.heading}
             />
           );
         })}

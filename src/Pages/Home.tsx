@@ -1,4 +1,5 @@
-import { Fragment } from "react";
+import { Fragment, useEffect } from "react";
+import { Element, scroller } from "react-scroll";
 import {
   Hero,
   Services,
@@ -9,10 +10,25 @@ import {
 } from "../Components";
 
 export default function Home() {
+  useEffect(() => {
+    const hash = window.location.hash;
+
+    if (hash === "#services") {
+      scroller.scrollTo(hash.substring(1), {
+        smooth: true,
+        duration: 500,
+        offset: -50,
+        spy: true,
+      });
+    }
+  }, []);
   return (
     <Fragment>
       <Hero />
-      <Services />
+      <Element name="services" id="services">
+        <Services />
+      </Element>
+
       <Partners />
       <ReviewHome />
       <Portfolio />

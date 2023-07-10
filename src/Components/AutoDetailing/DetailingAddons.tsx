@@ -49,6 +49,7 @@ export default function DetailingAddons() {
                 type: "spring",
                 stiffness: 60 - stiff,
               }}
+              key={idx}
               viewport={{ once: true, amount: 0.5 }}
               className="text-white border border-white border-opacity-30 xs:w-[350px] w-full mx-auto flex flex-col py-5 gap-5"
             >

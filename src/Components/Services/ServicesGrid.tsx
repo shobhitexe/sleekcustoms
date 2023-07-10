@@ -22,13 +22,7 @@ export default function ServicesGrid() {
               viewport={{ once: true, amount: 0.5 }}
               className="md:text-[30px] text-[25px] break-all text-center"
             >
-              {data.title === "DYNO SHIELD WINDSHIELD PROTECTANT" ? (
-                <span>
-                  DYNO SHIELD WINDSHIELD <br /> PROTECTANT
-                </span>
-              ) : (
-                `${data.title}`
-              )}
+              {data.title}
             </motion.p>
             <motion.p
               initial={{ opacity: 0, translateY: "50px" }}
@@ -40,7 +34,7 @@ export default function ServicesGrid() {
                 stiffness: 60,
               }}
               viewport={{ once: true, amount: 0.5 }}
-              className="md:text-[20px] text-[15px]"
+              className="md:text-[25px] text-[20px] text-priceText"
             >
               {data.cost}
             </motion.p>

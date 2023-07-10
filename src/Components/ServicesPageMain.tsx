@@ -19,20 +19,29 @@ export default function ServicesPageMain({
   return (
     <div className="w-[80%] mx-auto mt-[100px]">
       <div className="flex sm:flex-row flex-col">
-        <motion.img
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{
-            delay: 0.1,
-            duration: 0.5,
-            type: "spring",
-            stiffness: 60,
-          }}
-          viewport={{ once: true, amount: 0.5 }}
-          src={`ServicesComponent/${selectedImage}`}
-          alt="AD-main"
-          className="md:w-[60%] sm:w-[50%] object-contain"
-        />
+        {selectedImage === "CeramicCoatingDefault.webp" ? (
+          <iframe
+            src="https://www.youtube.com/embed/dpqVKHSZFYs"
+            className="md:w-[60%] sm:w-[50%] object-contain sm:h-auto ss:h-72 xs:h-60 h-52"
+            title="All about Onyx Coating!"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          ></iframe>
+        ) : (
+          <motion.img
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{
+              delay: 0.1,
+              duration: 0.5,
+              type: "spring",
+              stiffness: 60,
+            }}
+            viewport={{ once: true, amount: 0.5 }}
+            src={`ServicesComponent/${selectedImage}`}
+            alt="AD-main"
+            className="md:w-[60%] sm:w-[50%] object-contain"
+          />
+        )}
         <div className="flex flex-col text-white justify-center gap-1 lg:pl-20 pl-10 sm:mt-0 mt-7">
           <motion.p
             initial={{ opacity: 0, translateY: "50px" }}
