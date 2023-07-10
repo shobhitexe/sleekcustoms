@@ -24,8 +24,6 @@ export default function Home() {
   }, []);
 
   function scrollToServices() {
-    console.log("ok");
-
     scroller.scrollTo("services", {
       smooth: true,
       duration: 100,

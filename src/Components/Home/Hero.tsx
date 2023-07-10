@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { openInNewTab } from "../../Pages/OpenLinks";
-import { Link } from "react-router-dom";
 
 type HeroProps = {
   scrollToServices: () => void;
