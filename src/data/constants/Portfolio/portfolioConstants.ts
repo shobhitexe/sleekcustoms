@@ -1,6 +1,6 @@
 import { portfolioSelectionIconsType } from "./portfolioTypes";
 
-const basePortfolioImage: string = "/portfolio/icons";
+const basePortfolioImage: string = "/images/portfolio/icons";
 
 export enum carTagType {
   toyota = "toyota",
@@ -108,7 +108,7 @@ export const portfolioSelectionIcons: portfolioSelectionIconsType[] = [
   },
 ];
 
-const basePortfolioDisplay: string = "/portfolio/display";
+const basePortfolioDisplay: string = "/images/portfolio/display";
 
 export const PortfolioDisplayData: portfolioSelectionIconsType[] = [
   { image: `${basePortfolioDisplay}/audi-1.webp`, tag: carTagType.audi },

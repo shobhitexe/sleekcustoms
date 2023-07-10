@@ -37,7 +37,7 @@ export default function ServicesPageMain({
               stiffness: 60,
             }}
             viewport={{ once: true, amount: 0.5 }}
-            src={`ServicesComponent/${selectedImage}`}
+            src={`/images/ServicesComponent/${selectedImage}`}
             alt="AD-main"
             className="md:w-[60%] sm:w-[50%] object-contain"
           />
@@ -100,7 +100,7 @@ export default function ServicesPageMain({
                 stiffness: 60,
               }}
               viewport={{ once: true, amount: 0.5 }}
-              src={`/ServicesComponent/${data}`}
+              src={`/images/ServicesComponent/${data}`}
               alt={data}
               key={data}
               className=" cursor-pointer shadow-lg max-w-full w-[20%] basis-[30%]"

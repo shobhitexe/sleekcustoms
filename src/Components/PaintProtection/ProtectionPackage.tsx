@@ -88,7 +88,7 @@ export default function ProtectionPackage() {
             stiffness: 60,
           }}
           viewport={{ once: true, amount: 0.5 }}
-          src="/PaintProtection/car.webp"
+          src="/images/PaintProtection/car.webp"
           alt="car"
           className="sm:w-[50%] w-[80%] object-contain"
         />

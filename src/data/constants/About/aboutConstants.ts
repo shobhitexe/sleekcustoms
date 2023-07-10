@@ -18,7 +18,7 @@ export const aboutparallexScrollableDivs: aboutparallexScrollableDivsType[] = [
   },
 ];
 
-const aboutGridImagesBase: string = "/about";
+const aboutGridImagesBase: string = "/images/about";
 
 export const aboutGridImagesData: string[] = [
   `${aboutGridImagesBase}/about-3.webp`,

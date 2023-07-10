@@ -9,8 +9,8 @@ type ReviewCardsProps = {
 export default function ReviewCards({
   max = reviewsData.length,
 }: ReviewCardsProps) {
-  const googleImage: string = `/reviews/google.svg`;
-  const startImage: string = `/reviews/star.webp`;
+  const googleImage: string = `/images/reviews/google.svg`;
+  const starImage: string = `/images/reviews/star.webp`;
   const reviewsArr: number[] = [1, 2, 3, 4, 5];
 
   return (
@@ -32,6 +32,7 @@ export default function ReviewCards({
                 type: "spring",
                 stiffness: 60,
               }}
+              key={idx}
               viewport={{ once: true, amount: 0.5 }}
               className="flex flex-col w-[250px] cursor-pointer"
               onClick={() => openInNewTab(data.link)}
@@ -50,9 +51,9 @@ export default function ReviewCards({
                           stiffness: 60,
                         }}
                         viewport={{ once: true, amount: 0.5 }}
-                        src={startImage}
+                        src={starImage}
                         alt={`star-${data}`}
-                        key={data}
+                        key={idx}
                       />
                     );
                   })}

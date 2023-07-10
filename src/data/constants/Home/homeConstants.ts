@@ -14,7 +14,7 @@ export const navbarLinks: navLinksType[] = [
   // { title: "Blog", link: "" },
 ];
 
-const imgBaseServices: string = "/services";
+const imgBaseServices: string = "/images/services";
 
 export const servicesData: servicesDataType[] = [
   {
@@ -39,7 +39,7 @@ export const servicesData: servicesDataType[] = [
   },
 ];
 
-const imgBasePartners: string = "/partners";
+const imgBasePartners: string = "/images/partners";
 
 export const partnersImages: partnersImagesType[] = [
   { alt: "Onyx", image: `${imgBasePartners}/Onyx_Logo.webp` },
@@ -47,7 +47,7 @@ export const partnersImages: partnersImagesType[] = [
   { alt: "Avery", image: `${imgBasePartners}/Avery.webp` },
 ];
 
-const imageBasePortfolio: string = "/portfolio";
+const imageBasePortfolio: string = "/images/portfolio";
 
 export const portfolioImages: portfolioImagesType[] = [
   { title: "Tesla", image: `${imageBasePortfolio}/pf-1.webp` },
@@ -58,7 +58,7 @@ export const portfolioImages: portfolioImagesType[] = [
   { title: "Lexus", image: `${imageBasePortfolio}/pf-6.webp` },
 ];
 
-const imageBaseFooter: string = "/footer";
+const imageBaseFooter: string = "/images/footer";
 
 export const footerData: FooterDataType = {
   pages: [

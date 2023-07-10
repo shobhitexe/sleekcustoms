@@ -8,7 +8,7 @@ export const servicesGridData: servicesGridDataType[] = [
 ];
 
 export const servicesPortfolioData = [
-  { image: "/portfolio/display/bmw-4.webp", alt: "BMW" },
-  { image: "/portfolio/display/land-rover-4.webp", alt: "land-rover" },
-  { image: "/portfolio/display/genesis-1.webp", alt: "genesis" },
+  { image: "/images/portfolio/display/bmw-4.webp", alt: "BMW" },
+  { image: "/images/portfolio/display/land-rover-4.webp", alt: "land-rover" },
+  { image: "/images/portfolio/display/genesis-1.webp", alt: "genesis" },
 ];

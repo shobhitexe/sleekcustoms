@@ -2,7 +2,11 @@ import { motion } from "framer-motion";
 import { openInNewTab } from "../../Pages/OpenLinks";
 import { Link } from "react-router-dom";
 
-export default function Hero() {
+type HeroProps = {
+  scrollToServices: () => void;
+};
+
+export default function Hero({ scrollToServices }: HeroProps) {
   const buttonClasses: string =
     "bg-white px-10 py-2 ss:text-[15px] text-[12px] font-Montserrat font-semibold cursor-pointer";
 
@@ -65,21 +69,21 @@ export default function Hero() {
           >
             Book Today
           </motion.div>
-          <Link to={"/more-services"}>
-            <motion.div
-              initial={{ opacity: 0, translateY: "50%" }}
-              whileInView={{ opacity: 1, translateY: "0%" }}
-              transition={{
-                delay: 0.4,
-                type: "spring",
-                stiffness: 40,
-              }}
-              viewport={{ once: true, amount: 0.5 }}
-              className={`${buttonClasses} bg-opacity-20 text-white`}
-            >
-              View services
-            </motion.div>
-          </Link>
+
+          <motion.div
+            initial={{ opacity: 0, translateY: "50%" }}
+            whileInView={{ opacity: 1, translateY: "0%" }}
+            transition={{
+              delay: 0.4,
+              type: "spring",
+              stiffness: 40,
+            }}
+            viewport={{ once: true, amount: 0.5 }}
+            className={`${buttonClasses} bg-opacity-20 text-white`}
+            onClick={scrollToServices}
+          >
+            View services
+          </motion.div>
         </div>
       </motion.div>
     </div>

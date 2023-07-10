@@ -13,7 +13,7 @@ export default function PortfolioDisplay({ filter }: PortfolioDisplayProps) {
       )
         .sort(() => Math.random() - 0.5)
         .map((data) => {
-          if (data.image === "/portfolio/display/") {
+          if (data.image === "/images/portfolio/display/") {
             return;
           }
           return (

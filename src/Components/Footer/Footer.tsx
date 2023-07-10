@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="flex justify-around w-[90%] mx-auto">
         <div className="flex flex-col gap-10">
           <img
-            src="/SC-Logo-1.svg"
+            src="/images/SC-Logo-1.svg"
             alt="logo"
             className="sm:w-28 w-24 sm:h-28 h-24"
           />

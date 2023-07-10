@@ -22,9 +22,21 @@ export default function Home() {
       });
     }
   }, []);
+
+  function scrollToServices() {
+    console.log("ok");
+
+    scroller.scrollTo("services", {
+      smooth: true,
+      duration: 100,
+      offset: -70,
+      spy: true,
+    });
+  }
+
   return (
     <Fragment>
-      <Hero />
+      <Hero scrollToServices={scrollToServices} />
       <Element name="services" id="services">
         <Services />
       </Element>
