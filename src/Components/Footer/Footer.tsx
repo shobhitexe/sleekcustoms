@@ -34,21 +34,21 @@ export default function Footer() {
           <FooterLinks linkData={footerData.services} heading="Services" />
           <FooterLinks linkData={footerData.misc} heading="Misc" />
           <div className="flex flex-col gap-1">
-            <h1 className="text-white font-Montserrat font-semibold text-[13px]">
+            <h1 className="text-white font-Montserrat font-semibold text-[14px]">
               Business info
             </h1>
-            <p className="text-white text-left ss:text-[11px] text-[9px] md:w-[300px] sm:w-[250px] ss:w-auto w-[180px] capitalize opacity-70 font-Montserrat">
-              <span className="text-white text-left ss:text-[12px] text-[10px] capitalize opacity-70 font-Montserrat font-semibold">
+            <p className="text-white text-left ss:text-[11px] text-[11px] md:w-[300px] sm:w-[250px] ss:w-auto w-[180px] capitalize opacity-70 font-Montserrat">
+              <span className="text-white text-left ss:text-[12px] text-[13px] capitalize opacity-70 font-Montserrat font-semibold">
                 Address:{" "}
               </span>
               Unit 138, Atlas Industrial Estate, 1 Rutherglen Road, Rutherglen,
               Glasgow G73 1SX, United Kingdom.
             </p>
-            <p className="text-white text-left ss:text-[11px] text-[9px] capitalize opacity-70 font-Montserrat mt-3 ss:w-auto w-[100px]">
-              <span className="text-white text-left ss:text-[11px] text-[9px] capitalize opacity-70 font-Montserrat font-semibold">
-                Mon-Sun:{" "}
+            <p className="text-white text-left text-[13px]  capitalize opacity-70 font-Montserrat mt-3 ss:w-auto w-[100px]">
+              <span className="text-white text-left text-[13px] capitalize opacity-70 font-Montserrat font-semibold">
+                Monday to Friday:{" "}
               </span>
-              8:00 AM to 6:00 PM
+              8am-5pm
             </p>
           </div>
         </div>

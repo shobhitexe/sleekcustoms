@@ -22,7 +22,7 @@ export default function PaintCorrection() {
       <div className=" mt-20">
         <div className="flex flex-col text-white w-[80%] mx-auto">
           <p className="font-Montserrat text-[15px]">PRICING</p>
-          <h1 className="font-deluxe  text-[40px]">
+          <h1 className="font-deluxe text-[40px] sm:leading-normal leading-10">
             VIEW OUR PAINT CORRECTION PACKAGES
           </h1>
         </div>

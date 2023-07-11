@@ -7,7 +7,7 @@ type PortfolioDisplayProps = {
 
 export default function PortfolioDisplay({ filter }: PortfolioDisplayProps) {
   return (
-    <div className="pb-[200px] min-h-[500px] grid grid-cols-3 justify-between">
+    <div className="pb-[200px] min-h-[500px] grid ss:grid-cols-3 grid-cols-2 justify-between">
       {PortfolioDisplayData.filter(
         (data) => filter === "" || data.tag === filter
       )

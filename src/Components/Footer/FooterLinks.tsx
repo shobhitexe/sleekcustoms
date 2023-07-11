@@ -9,7 +9,7 @@ type FooterLinksProps = {
 export default function FooterLinks({ linkData, heading }: FooterLinksProps) {
   return (
     <div className="flex flex-col gap-2">
-      <h1 className="text-white font-Montserrat font-semibold ss:text-[15px] text-[13px]">
+      <h1 className="text-white font-Montserrat font-semibold ss:text-[15px] text-[14px]">
         {heading}
       </h1>
       {linkData.map((data) => {
@@ -17,7 +17,7 @@ export default function FooterLinks({ linkData, heading }: FooterLinksProps) {
           <Link
             key={data.title}
             to={data.link}
-            className="text-white text-left ss:text-[12px] text-[10px] capitalize opacity-70 font-Montserrat cursor-pointer"
+            className="text-white text-left ss:text-[12px] text-[11px] capitalize opacity-70 font-Montserrat cursor-pointer"
           >
             {data.title}
           </Link>

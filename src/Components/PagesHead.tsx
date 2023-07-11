@@ -39,7 +39,7 @@ export default function PagesHead({
                 stiffness: 60,
               }}
               viewport={{ once: true, amount: 0.5 }}
-              className="md:text-[20px] sm:text-[15px] text-[12px] absolute sm:top-0 -top-2"
+              className="md:text-[20px] sm:text-[15px] text-[14px] absolute sm:top-0 -top-2"
             >
               {heading1}
             </motion.p>

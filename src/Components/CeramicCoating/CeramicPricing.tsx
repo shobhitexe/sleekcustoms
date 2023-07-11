@@ -18,7 +18,7 @@ export default function CeramicPricing() {
               stiffness: 60,
             }}
             viewport={{ once: true, amount: 0.5 }}
-            className="text-[15px] absolute sm:-top-2 -top-3"
+            className="text-[15px] absolute sm:-top-7 -top-5"
           >
             PRICING
           </motion.p>
@@ -32,16 +32,10 @@ export default function CeramicPricing() {
               stiffness: 50,
             }}
             viewport={{ once: true, amount: 0.5 }}
-            className="sm:text-[40px] text-[20px]"
+            className="sm:text-[40px] text-[25px]  max-sm:leading-5"
           >
             VIEW OUR CERAMIC COATING PACKAGES
           </motion.p>
-        </div>
-        <div className="text-white font-Montserrat flex sm:gap-5 gap-2 sm:text-[15px] text-[12px]">
-          <div className="border-b-2 text-priceText">2 Door</div>
-          <div>4 Door</div>
-          <div>SUV</div>
-          <div>Oversized</div>
         </div>
       </div>
       <PricingComponent detailsArr={ceramicCoatingPackagedata} />

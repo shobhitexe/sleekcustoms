@@ -69,7 +69,7 @@ export default function ServicesPageMain({
               stiffness: 50,
             }}
             viewport={{ once: true, amount: 0.5 }}
-            className="font-deluxe text-[30px]"
+            className="font-deluxe text-[30px] font-semibold"
           >
             {heading}
           </motion.h1>
@@ -83,7 +83,7 @@ export default function ServicesPageMain({
               stiffness: 40,
             }}
             viewport={{ once: true, amount: 0.5 }}
-            className="font-Montserrat md:text-[13px] text-[10px] md:w-[400px] sm:w-[300px] leading-relaxed opacity-60"
+            className="font-Montserrat md:text-[15px] text-[12px] md:w-[400px] sm:w-[300px] leading-relaxed opacity-60"
           >
             {paragraph}
           </motion.p>
@@ -106,7 +106,7 @@ export default function ServicesPageMain({
               loading="lazy"
               alt={data}
               key={data}
-              className=" cursor-pointer shadow-lg max-w-full w-[20%] basis-[30%]"
+              className=" cursor-pointer shadow-lg max-w-full ss:w-[20%] w-[45%] basis-[30%]"
               onClick={() => {
                 setSelectedImage(data);
               }}

@@ -94,7 +94,6 @@ export default function BenifitsComponent({
                 alt="diamond"
                 loading="lazy"
               />
-              loading="lazy"
               <h1 className="text-white font-deluxe text-[16px]">{grid}</h1>
             </motion.div>
           );

@@ -77,7 +77,7 @@ export default function CeramicDifference() {
         src="/images/CeramicCoating/graph.webp"
         loading="lazy"
         alt="graph"
-        className=" object-contain w-[50%]"
+        className="object-contain sm:w-[50%]"
       />
     </div>
   );

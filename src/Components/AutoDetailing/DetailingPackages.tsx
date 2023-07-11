@@ -18,7 +18,7 @@ export default function DetailingPackages() {
               stiffness: 60,
             }}
             viewport={{ once: true, amount: 0.5 }}
-            className="text-[15px] absolute sm:-top-2 -top-3"
+            className="text-[17px] absolute sm:-top-8 -top-6"
           >
             PRICING
           </motion.p>
@@ -32,15 +32,10 @@ export default function DetailingPackages() {
               stiffness: 50,
             }}
             viewport={{ once: true, amount: 0.5 }}
-            className="sm:text-[40px] text-[20px] font-semibold"
+            className="sm:text-[40px] text-[25px] font-semibold leading-5"
           >
             VIEW OUR DETAILING PACKAGES
           </motion.p>
-        </div>
-        <div className="text-white font-Montserrat flex sm:gap-5 gap-2 sm:text-[15px] text-[12px]">
-          <div className="border-b-2 text-priceText">2 Door</div>
-          <div>4 Door</div>
-          <div>SUV</div>
         </div>
       </div>
       <div className="flex sm:flex-row flex-col sm:gap-0 gap-10 items-center mt-10 justify-around">
@@ -93,7 +88,10 @@ export default function DetailingPackages() {
                 <ul className="block list-disc pl-2">
                   {data.pointers.map((points) => {
                     return idx === 0 ? (
-                      <div className=" bg-cardsBg px-5 py-3 border-b border-white border-opacity-30">
+                      <div
+                        className=" bg-cardsBg px-5 py-3 border-b border-white border-opacity-30"
+                        key={points}
+                      >
                         {points}
                       </div>
                     ) : (

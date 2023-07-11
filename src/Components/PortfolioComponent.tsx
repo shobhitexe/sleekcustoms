@@ -54,7 +54,7 @@ export default function PortfolioComponent() {
           </Link>
         </motion.div>
       </div>
-      <div className="grid grid-flow-col">
+      <div className="grid grid-flow-col max-sm:grid-cols-1">
         {servicesPortfolioData.map((data, idx) => {
           return (
             <motion.img

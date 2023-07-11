@@ -33,7 +33,7 @@ export default function CeramicCoating() {
       <BenifitsComponent
         heading="THE BENIFITS OF CERAMIC COATING"
         desc="This long-lasting coating repels contaminants and protects your paint
-          from the St. Paul-Minneapolis area elements. Upgrade your car's
+          from the  Glasgow area elements. Upgrade your car's
           appearance with our ceramic coating today!"
         pointersArr={ceramicCoatingBenifitsPointers}
         gridArr={ceramicCoatingBenifitsGrid}

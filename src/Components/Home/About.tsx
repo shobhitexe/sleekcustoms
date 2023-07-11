@@ -16,7 +16,7 @@ export default function About() {
         src="/images/about/PK.webp"
         loading="lazy"
         alt="pk"
-        className="ss:w-[25%] w-[30%]"
+        className="ss:w-[25%] w-[50%]"
       />
       <div className="flex flex-col justify-center">
         <motion.p
@@ -43,7 +43,7 @@ export default function About() {
             damping: 10,
           }}
           viewport={{ once: true, amount: 0.5 }}
-          className="text-white font-bold md:text-[40px] sm:text-[35px] xs:text[30px] text-[25px] tracking-wide text-left font-deluxe"
+          className="text-white font-bold md:text-[40px] sm:text-[35px] xs:text[30px] text-[27px] tracking-wide text-left font-deluxe"
         >
           SLEEK CUSTOMS | EST. 2020
         </motion.p>
@@ -57,7 +57,7 @@ export default function About() {
             damping: 10,
           }}
           viewport={{ once: true, amount: 0.5 }}
-          className="text-white text-left font-semibold md:text-[12px] sm:text-[10px] text-[6px] md:w-[500px] sm:w-[400px] xs:w-[300px] w-[250px] capitalize opacity-70 font-Montserrat"
+          className="text-white text-left font-semibold md:text-[14px] text-[11px] md:w-[500px] sm:w-[400px] xs:w-[300px] w-[250px] capitalize opacity-70 font-Montserrat"
         >
           Serving the need for extraordinary vehicle care in Glasgow. Bringing
           your vehicle care, precision and great service to make sure it leaves

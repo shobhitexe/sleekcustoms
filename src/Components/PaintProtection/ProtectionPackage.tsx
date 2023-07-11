@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { openInNewTab } from "../../Pages/OpenLinks";
 
 export default function ProtectionPackage() {
   return (
@@ -16,7 +17,7 @@ export default function ProtectionPackage() {
               stiffness: 60,
             }}
             viewport={{ once: true, amount: 0.5 }}
-            className="text-[15px] absolute sm:-top-2 -top-3"
+            className="text-[15px] absolute sm:-top-7 -top-5"
           >
             PRICING
           </motion.p>
@@ -30,20 +31,14 @@ export default function ProtectionPackage() {
               stiffness: 50,
             }}
             viewport={{ once: true, amount: 0.5 }}
-            className="sm:text-[40px] text-[20px]"
+            className="sm:text-[40px] text-[25px]"
           >
-            VIEW OUR CERAMIC COATING PACKAGES
+            VIEW OUR PAINT PROTECTION
           </motion.p>
-        </div>
-        <div className="text-white font-Montserrat flex sm:gap-5 gap-2 sm:text-[15px] text-[12px]">
-          <div className="border-b-2 text-priceText">Partial Frontend</div>
-          <div>Full Frontend</div>
-          <div>Track Package</div>
-          <div>Full Car</div>
         </div>
       </div>
       <div className="flex sm:flex-row flex-col sm:gap-0 gap-10 items-center">
-        <div className="text-white flex flex-col gap-5">
+        <div className="text-white flex flex-col gap-5 max-sm:items-center">
           <motion.h1
             initial={{ opacity: 0, translateY: "50px" }}
             whileInView={{ opacity: 1, translateY: "0px" }}
@@ -74,7 +69,12 @@ export default function ProtectionPackage() {
             protection to the front hood, protection to the fenders, and
             protection to the mirrors.
           </motion.p>
-          <div className="bg-white w-fit font-semibold mt-2 py-1 md:px-20 px-16 text-black md:text-[15px] text-[13px]">
+          <div
+            className="bg-white w-fit font-semibold mt-2 py-1 md:px-20 px-16 text-black md:text-[15px] text-[13px]"
+            onClick={() =>
+              openInNewTab("https://www.instagram.com/sleekcustomsgarage/")
+            }
+          >
             REQUEST A FREE QUOTE
           </div>
         </div>

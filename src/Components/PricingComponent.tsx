@@ -10,7 +10,7 @@ export default function PricingComponent({
   detailsArr,
 }: PricingComponentProps) {
   return (
-    <div className="flex sm:flex-row flex-col sm:w-[80%] max-sm:items-center mx-auto text-center justify-center gap-10 mt-5">
+    <div className="flex sm:flex-row flex-col sm:w-[80%] w-[90%] max-sm:items-center mx-auto text-center justify-center gap-10 mt-5">
       {detailsArr.map((data, idx) => {
         const stiff = idx * 10;
         return (

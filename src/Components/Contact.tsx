@@ -4,7 +4,7 @@ import { openInNewTab } from "../Pages/OpenLinks";
 
 export default function Contact() {
   const buttonClasses: string =
-    "bg-white sm:px-10 px-8 py-2 ss:text-[12px] ss:text-[10px] text-[8px] font-Montserrat font-semibold cursor-pointer";
+    "bg-white sm:px-10 px-8 py-2 ss:text-[12px] text-[10px] font-Montserrat font-semibold cursor-pointer";
 
   return (
     <div className="sm:py-[200px] py-[150px] w-full bg-no-repeat flex flex-col bg-contact-bg bg-fixed bg-cover bg-center items-center justify-center">
@@ -51,7 +51,7 @@ export default function Contact() {
         >
           Book Today
         </motion.div>
-        <Link to={"/more-services"}>
+        <Link to={"/#services"}>
           <motion.div
             initial={{ opacity: 0, translateY: "50%" }}
             whileInView={{ opacity: 1, translateY: "0%" }}

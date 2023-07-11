@@ -43,7 +43,7 @@ export default function Partners() {
             damping: 10,
           }}
           viewport={{ once: true, amount: 0.5 }}
-          className="text-white text-center sm:text-[20px] ss:text-[13px] text-[10px] sm:leading-[25px] ss:leading-[20px] leading-[12px] mx-auto capitalize opacity-70 font-Montserrat"
+          className="text-white text-center sm:text-[20px] ss:text-[13px] text-[12px] sm:leading-[25px] ss:leading-[20px] leading-[16px] mx-auto capitalize opacity-70 font-Montserrat"
         >
           Serving the need for extraordinary vehicle care in <br />
           Glasgow. Bringing your vehicle care, precision and great
