@@ -143,4 +143,12 @@ export const reviewsData: reviewsDataType[] = [
     profileImage: `https://lh3.googleusercontent.com/a/AAcHTtejoXZASuKL26rxZ-wFywozJHKd2T69f7GGzoJwIep_=w43-h43-p-rp-mo-br100`,
     link: "https://goo.gl/maps/28LDz4WdxksLsvnq7",
   },
+  {
+    description:
+      "Sleek Customs made my vehicle as sleek as when I picked it up from the dealership in 2011. This Camaro was recently imported from Saudi and had a few dings, dangs, chips and scratch’s as expected with a 12 year old car. That being said, within the short time of a weekend they’ve all been touched up and corrected, the paint swirls are completely gone, a sandblasted front bumper that was dull is now shining like the rest of the car and all thanks to SLEEK CUSTOMS.Patryk and Agata run this family business and take a lot of pride in their work and this is reflected in my car and every other car i have seen their, they treat it as they are their own. The service is warm and friendly from the start to the finish and in the aftercare, you want proof take a look at the photos below, then contact them now for a great deal and an impeccable result on your vehicle (motorbikes included).",
+    name: "Darron Thatcher",
+    profileImage:
+      "https://lh3.googleusercontent.com/a-/AD_cMMRezfZUJSZFGPf7nAq0XiK48ms4Iqe_tehpvgSKzKCGDi0=w43-h43-p-rp-mo-br100",
+    link: "https://goo.gl/maps/ce1edjCqF3mAWjQp6",
+  },
 ];
