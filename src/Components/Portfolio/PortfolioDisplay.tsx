@@ -27,6 +27,7 @@ export default function PortfolioDisplay({ filter }: PortfolioDisplayProps) {
                 damping: 10,
               }}
               src={data.image}
+              loading="lazy"
               alt={data.tag}
               key={data.image}
               className=""

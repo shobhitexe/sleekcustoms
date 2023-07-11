@@ -66,6 +66,7 @@ export default function Partners() {
                 viewport={{ once: true, amount: 0.5 }}
                 key={data.alt}
                 src={data.image}
+                loading="lazy"
                 alt={data.alt}
                 className="lg:w-[250px] md:h-[70px] sm:h-[60px] ss:h-[50px] xs:h-[40px] h-[30px] sm:w-[180px] ss:w-[150px] xs:w-[120px] w-[100px]"
               />

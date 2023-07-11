@@ -68,6 +68,7 @@ export default function PortfolioComponent() {
               }}
               viewport={{ once: true, amount: 0.5 }}
               src={data.image}
+              loading="lazy"
               alt={data.alt}
               key={data.alt}
               className="w-full h-full"

@@ -22,6 +22,7 @@ export default function ServicesPageMain({
         {selectedImage === "CeramicCoatingDefault.webp" ? (
           <iframe
             src="https://www.youtube.com/embed/dpqVKHSZFYs"
+            loading="lazy"
             className="md:w-[60%] sm:w-[50%] object-contain sm:h-auto ss:h-72 xs:h-60 h-52"
             title="All about Onyx Coating!"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -38,6 +39,7 @@ export default function ServicesPageMain({
             }}
             viewport={{ once: true, amount: 0.5 }}
             src={`/images/ServicesComponent/${selectedImage}`}
+            loading="lazy"
             alt="AD-main"
             className="md:w-[60%] sm:w-[50%] object-contain"
           />
@@ -101,6 +103,7 @@ export default function ServicesPageMain({
               }}
               viewport={{ once: true, amount: 0.5 }}
               src={`/images/ServicesComponent/${data}`}
+              loading="lazy"
               alt={data}
               key={data}
               className=" cursor-pointer shadow-lg max-w-full w-[20%] basis-[30%]"

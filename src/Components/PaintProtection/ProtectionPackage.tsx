@@ -89,6 +89,7 @@ export default function ProtectionPackage() {
           }}
           viewport={{ once: true, amount: 0.5 }}
           src="/images/PaintProtection/car.webp"
+          loading="lazy"
           alt="car"
           className="sm:w-[50%] w-[80%] object-contain"
         />

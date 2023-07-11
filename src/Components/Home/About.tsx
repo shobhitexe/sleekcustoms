@@ -14,6 +14,7 @@ export default function About() {
         }}
         viewport={{ once: true, amount: 0.5 }}
         src="/images/about/PK.webp"
+        loading="lazy"
         alt="pk"
         className="ss:w-[25%] w-[30%]"
       />

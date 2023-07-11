@@ -17,6 +17,7 @@ export default function AboutParallex() {
           }}
           viewport={{ once: true, amount: 0.5 }}
           src="/images/about/about-2.webp"
+          loading="lazy"
           alt="about-2"
           className=""
         />

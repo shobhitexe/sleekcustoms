@@ -10,6 +10,7 @@ export default function Footer() {
         <div className="flex flex-col gap-10">
           <img
             src="/images/SC-Logo-1.svg"
+            loading="lazy"
             alt="logo"
             className="sm:w-28 w-24 sm:h-28 h-24"
           />
@@ -18,6 +19,7 @@ export default function Footer() {
               return (
                 <img
                   src={data.image}
+                  loading="lazy"
                   key={data.title}
                   alt={data.title}
                   className=" cursor-pointer"

@@ -52,6 +52,7 @@ export default function ReviewCards({
                         }}
                         viewport={{ once: true, amount: 0.5 }}
                         src={starImage}
+                        loading="lazy"
                         alt={`star-${data}`}
                         key={idx}
                       />
@@ -68,6 +69,7 @@ export default function ReviewCards({
                 </div>
                 <img
                   src={googleImage}
+                  loading="lazy"
                   alt="google"
                   className="w-[20%] rounded-full"
                 />
@@ -76,6 +78,7 @@ export default function ReviewCards({
               <div className="flex items-center p-5 gap-2">
                 <img
                   src={data.profileImage}
+                  loading="lazy"
                   alt="profile"
                   className="w-[45px]"
                 />

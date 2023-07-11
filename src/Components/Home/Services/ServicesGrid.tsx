@@ -19,6 +19,7 @@ export default function ServicesGrid() {
               }}
               viewport={{ once: true, amount: 0.5 }}
               src={data.image}
+              loading="lazy"
               className="rounded-lg"
               alt={data.title}
             />

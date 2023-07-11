@@ -24,6 +24,7 @@ export default function Navbar() {
             rel="preload"
             src="/images/SC-Logo-1.svg"
             className="sm:w-28 ss:w-24 w-20 sm:h-28 ss:h-24 h-20 z-20 bg-black p-2 rounded-full bg-opacity-50"
+            loading="lazy"
             alt="logo"
           />
         </Link>
@@ -70,6 +71,7 @@ export default function Navbar() {
         src={`/images/navbar/${isOpen ? "cross" : "ham"}.svg`}
         alt="cross"
         className="w-7 h-7 sm:hidden block cursor-pointer"
+        loading="lazy"
         onClick={() => {
           setIsOpen((prev) => !prev);
         }}

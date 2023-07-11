@@ -38,6 +38,7 @@ export default function PortfolioSortIcons({ setFilter }: PortfolioHeadProps) {
             <img
               key={data.tag}
               src={data.image}
+              loading="lazy"
               alt={data.tag}
               className={`md:w-20 sm:w-16 ss:w-14 w-12 md:h-20 sm:h-16 ss:h-14 h-12 cursor-pointer ${
                 idx === isSelected ? "bg-cardsBg px-4 rounded-md" : ""

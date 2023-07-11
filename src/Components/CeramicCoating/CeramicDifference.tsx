@@ -75,6 +75,7 @@ export default function CeramicDifference() {
         }}
         viewport={{ once: true, amount: 0.5 }}
         src="/images/CeramicCoating/graph.webp"
+        loading="lazy"
         alt="graph"
         className=" object-contain w-[50%]"
       />

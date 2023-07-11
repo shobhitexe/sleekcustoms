@@ -38,6 +38,7 @@ export default function Portfolio() {
                 }}
                 viewport={{ once: true, amount: 0.5 }}
                 src={data.image}
+                loading="lazy"
                 alt={data.title}
               />
               <p className="absolute w-fit font-semibold px-2 font-Montserrat md:text-[10px] ss:text-[8px] text-[6px] ss:bottom-5 bottom-3 ss:left-5 left-3 rounded-lg bg-white">
