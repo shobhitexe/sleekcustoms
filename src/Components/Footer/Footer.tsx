@@ -55,7 +55,10 @@ export default function Footer() {
         <div className=" border w-[80%] mx-auto mt-10 border-opacity-50 opacity-20"></div>
       </div>
       <div className="flex mt-5 text-white font-Montserrat ss:text-[13px] text-[10px] justify-between w-[80%] mx-auto">
-        <p>
+        <p
+          className="cursor-pointer"
+          onClick={() => openInNewTab("https://xtend.agency/")}
+        >
           WEBSITE BY <span className="font-semibold">XTEND</span>
         </p>
         <p>Copyright 2023 All Rights Reserved</p>
