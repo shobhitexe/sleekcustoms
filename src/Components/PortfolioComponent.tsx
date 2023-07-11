@@ -54,7 +54,7 @@ export default function PortfolioComponent() {
           </Link>
         </motion.div>
       </div>
-      <div className="grid grid-flow-col max-sm:grid-cols-1">
+      <div className="grid grid-flow-col">
         {servicesPortfolioData.map((data, idx) => {
           return (
             <motion.img
@@ -71,7 +71,7 @@ export default function PortfolioComponent() {
               loading="lazy"
               alt={data.alt}
               key={data.alt}
-              className="w-full h-full"
+              className="sm:w-full sm:h-full"
             />
           );
         })}
