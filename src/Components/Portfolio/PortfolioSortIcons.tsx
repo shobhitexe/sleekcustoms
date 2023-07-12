@@ -2,7 +2,8 @@ import {
   portfolioSelectionIcons,
   groupedIcons,
 } from "../../data/constants/Portfolio/portfolioConstants";
-import { Dispatch, SetStateAction, useState } from "react";
+import { portfolioSelectionIconsType } from "../../data/constants/Portfolio/portfolioTypes";
+import { Dispatch, SetStateAction, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 type PortfolioHeadProps = {
@@ -11,6 +12,13 @@ type PortfolioHeadProps = {
 
 export default function PortfolioSortIcons({ setFilter }: PortfolioHeadProps) {
   const [isSelected, setIsSelected] = useState<number>(-1);
+  const [iconsArr, setIconsArr] = useState<portfolioSelectionIconsType[]>([]);
+
+  useEffect(() => {
+    const randomizeArr: portfolioSelectionIconsType[] =
+      portfolioSelectionIcons.sort(() => Math.random() - 0.5);
+    setIconsArr(randomizeArr);
+  }, []);
 
   return (
     <div className="bg-black flex flex-col pb-14">
@@ -32,7 +40,7 @@ export default function PortfolioSortIcons({ setFilter }: PortfolioHeadProps) {
         </span>
       </motion.h1>
       <div className="flex md:flex-wrap gap-10 w-[90%] mx-auto md:justify-center md:overflow-hidden overflow-x-scroll">
-        {portfolioSelectionIcons.map((data, idx) => {
+        {iconsArr.map((data, idx) => {
           if (!groupedIcons[data.tag]) return;
           return (
             <img

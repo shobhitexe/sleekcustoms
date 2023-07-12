@@ -35,6 +35,7 @@ export enum carTagType {
   skoda = "skoda",
   volkswagen = "volkswagen",
   volvo = "volvo",
+  mazda = "mazda",
 }
 
 export const portfolioSelectionIcons: portfolioSelectionIconsType[] = [
@@ -106,6 +107,10 @@ export const portfolioSelectionIcons: portfolioSelectionIconsType[] = [
     image: `${basePortfolioImage}/volvo.svg`,
     tag: carTagType.volvo,
   },
+  {
+    image: `${basePortfolioImage}/mazda.webp`,
+    tag: carTagType.mazda,
+  },
 ];
 
 const basePortfolioDisplay: string = "/images/portfolio/display";
@@ -131,7 +136,6 @@ export const PortfolioDisplayData: portfolioSelectionIconsType[] = [
   { image: `${basePortfolioDisplay}/ford-1.webp`, tag: carTagType.ford },
   { image: `${basePortfolioDisplay}/ford-2.webp`, tag: carTagType.ford },
   { image: `${basePortfolioDisplay}/ford-3.webp`, tag: carTagType.ford },
-  { image: `${basePortfolioDisplay}/ford-4.webp`, tag: carTagType.ford },
   { image: `${basePortfolioDisplay}/genesis-1.webp`, tag: carTagType.genesis },
   { image: `${basePortfolioDisplay}/hyundai-1.webp`, tag: carTagType.hyundai },
   { image: `${basePortfolioDisplay}/jaguar-1.webp`, tag: carTagType.jaguar },
@@ -191,6 +195,7 @@ export const PortfolioDisplayData: portfolioSelectionIconsType[] = [
     tag: carTagType.volkswagen,
   },
   { image: `${basePortfolioDisplay}/volvo-1.webp`, tag: carTagType.volvo },
+  { image: `${basePortfolioDisplay}/mazda-1.webp`, tag: carTagType.mazda },
   { image: `${basePortfolioDisplay}/`, tag: "" },
 ];
 

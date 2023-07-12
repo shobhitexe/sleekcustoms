@@ -10,7 +10,7 @@ export default function Hero({ scrollToServices }: HeroProps) {
     "bg-white px-10 py-2 ss:text-[15px] text-[12px] font-Montserrat font-semibold cursor-pointer";
 
   return (
-    <div className="sm:bg-hero-main bg-hero-mob h-screen w-full bg-cover mx-auto">
+    <div className="sm:bg-hero-main bg-hero-mob h-screen w-full  bg-center bg-cover mx-auto">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}

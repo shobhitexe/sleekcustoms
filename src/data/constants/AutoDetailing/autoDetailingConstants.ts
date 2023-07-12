@@ -34,7 +34,7 @@ export const autoDetailingPackagesData: autoDetailingPackagesDataType[] = [
       "UV protectant",
     ],
     other_info: "* Additional charge for pet hair, blood, and vomit.",
-    price: 69.99,
+    price: 99.99,
   },
   {
     heading: "EXTERIOR DETAILING",
@@ -46,11 +46,10 @@ export const autoDetailingPackagesData: autoDetailingPackagesDataType[] = [
       "Undercarriage sprayed",
       "Hand wash",
       "Hand dried",
-      "Hand wax",
       "Low shine tire dressing",
       "Trims protected",
     ],
-    price: 49.99,
+    price: 149.99,
   },
 ];
 
