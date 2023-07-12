@@ -108,7 +108,7 @@ export const portfolioSelectionIcons: portfolioSelectionIconsType[] = [
     tag: carTagType.volvo,
   },
   {
-    image: `${basePortfolioImage}/mazda.webp`,
+    image: `${basePortfolioImage}/mazda.svg`,
     tag: carTagType.mazda,
   },
 ];
