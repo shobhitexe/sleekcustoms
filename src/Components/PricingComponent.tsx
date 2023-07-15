@@ -10,7 +10,7 @@ export default function PricingComponent({
   detailsArr,
 }: PricingComponentProps) {
   return (
-    <div className="flex sm:flex-row flex-col sm:w-[80%] w-[90%] max-sm:items-center mx-auto text-center justify-center gap-10 mt-5">
+    <div className="flex sm:flex-row flex-col sm:w-[80%] w-[90%] max-sm:items-center flex-wrap mx-auto text-center justify-center gap-10 mt-5">
       {detailsArr.map((data, idx) => {
         const stiff = idx * 10;
         return (
@@ -25,16 +25,16 @@ export default function PricingComponent({
             }}
             key={idx}
             viewport={{ once: true, amount: 0.5 }}
-            className="text-white font-Montserrat flex flex-col sm:w-[50%] border h-fit"
+            className="text-white font-Montserrat flex flex-col border sm:w-[350px]"
           >
-            <h1 className="font-deluxe text-[30px] border-b py-2">
+            <h1 className="font-deluxe text-[30px] border-b py-2 flex-1">
               {data.heading}
             </h1>
-            <p className="text-left text-[12px] p-5 ">{data.desc}</p>
+            <p className="text-left text-[12px] p-5 flex-1">{data.desc}</p>
             <ul
               className={`${
                 data.pointers ? "pb-10" : ""
-              } px-10 text-left text-[14px] font-Montserrat list-disc`}
+              } px-10 text-left text-[14px] font-Montserrat list-disc flex-1`}
             >
               {data.pointers?.map((points) => {
                 return <li>{points}</li>;
@@ -42,14 +42,16 @@ export default function PricingComponent({
             </ul>
 
             <p
-              className="text-[15px] py-4 border-t cursor-pointer"
+              className="text-[15px] py-4 border-t cursor-pointer flex-1"
               onClick={() =>
                 openInNewTab("https://www.instagram.com/sleekcustomsgarage/")
               }
             >
               See Details
             </p>
-            <p className="text-priceText border-t py-3">£{data.pricing}</p>
+            <p className="text-priceText border-t py-3 flex-1">
+              £{data.pricing}
+            </p>
           </motion.div>
         );
       })}
