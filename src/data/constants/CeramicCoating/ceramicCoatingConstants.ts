@@ -47,7 +47,7 @@ export const ceramicCoatingPackagedata: CeramicCoatingPackagedataType[] = [
       "1 Layer Of Ceramic Light",
       "1 Layer of “Rain” on Windshield and Front Side Windows",
     ],
-    pricing: 497,
+    pricing: 697,
   },
 ];
 
@@ -55,7 +55,7 @@ export const CeramicCoatingAddonsdata: CeramicCoatingPackagedataType[] = [
   {
     heading: "WHEELS & BRAKES",
     desc: "Ceramic Pro's Wheel and Caliper package reduces brake dust up to 50% Makes wheels and brakes easy to clean with just a rinse of water. Protect wheels and calipers from harsh elements",
-    pricing: 100,
+    pricing: 150,
   },
   {
     heading: "INTERIOR PROTECTION",
