@@ -12,7 +12,7 @@ export const paintCorrectionPackagedata: paintCorrectionPackagedataType[] = [
   {
     heading: "Car Value Booster",
     desc: "Sleek Custom’s special car value booster pack includes a full iron decontamination, a 1 stage paint correction, a nice shiny car show wax, interior detailed and your windows ceramic coated which makes your car as sleek as new!",
-    pricing: 597,
+    pricing: 397,
   },
   {
     heading: "1 STEP POLISH",

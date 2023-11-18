@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { openInNewTab } from "../Pages/OpenLinks";
+import ContactFrame from "./ContactFrame";
 
 export default function Contact() {
-  const buttonClasses: string =
+  const buttonClasses =
     "bg-white sm:px-10 px-8 py-2 ss:text-[12px] text-[10px] font-Montserrat font-semibold cursor-pointer";
 
   return (
@@ -66,6 +67,9 @@ export default function Contact() {
             View services
           </motion.div>
         </Link>
+      </div>
+      <div className="pt-10 w-full">
+        <ContactFrame />
       </div>
     </div>
   );

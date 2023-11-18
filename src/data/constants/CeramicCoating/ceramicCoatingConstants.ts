@@ -47,7 +47,7 @@ export const ceramicCoatingPackagedata: CeramicCoatingPackagedataType[] = [
       "1 Layer Of Ceramic Light",
       "1 Layer of “Rain” on Windshield and Front Side Windows",
     ],
-    pricing: 697,
+    pricing: 497,
   },
 ];
 

@@ -58,7 +58,6 @@ function App() {
       ) : null}
 
       <Contact />
-      <ContactFrame />
       <Footer />
     </Fragment>
   );
