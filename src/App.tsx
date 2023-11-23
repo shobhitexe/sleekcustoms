@@ -19,7 +19,6 @@ import {
 import { Fragment, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-import ContactFrame from "./Components/ContactFrame";
 
 function App() {
   const location = useLocation();
