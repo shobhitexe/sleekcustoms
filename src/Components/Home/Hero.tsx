@@ -6,7 +6,7 @@ type HeroProps = {
 };
 
 export default function Hero({ scrollToServices }: HeroProps) {
-  const buttonClasses: string =
+  const buttonClasses =
     "bg-white px-10 py-2 ss:text-[15px] text-[12px] font-Montserrat font-semibold cursor-pointer";
 
   return (
@@ -52,7 +52,7 @@ export default function Hero({ scrollToServices }: HeroProps) {
         </motion.p>
 
         <div className="mx-auto flex justify-center gap-5 mt-10">
-          <motion.div
+          <motion.a
             initial={{ opacity: 0, translateY: "50%" }}
             whileInView={{ opacity: 1, translateY: "0%" }}
             transition={{
@@ -62,12 +62,10 @@ export default function Hero({ scrollToServices }: HeroProps) {
             }}
             viewport={{ once: true, amount: 0.5 }}
             className={`${buttonClasses}`}
-            onClick={() =>
-              openInNewTab("https://www.instagram.com/sleekcustomsgarage/")
-            }
+            href="tel:+447394463391"
           >
             Book Today
-          </motion.div>
+          </motion.a>
 
           <motion.div
             initial={{ opacity: 0, translateY: "50%" }}

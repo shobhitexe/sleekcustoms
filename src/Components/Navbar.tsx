@@ -57,14 +57,12 @@ export default function Navbar() {
             </div>
           );
         })}
-        <div
+        <a
           className="bg-white md:px-10 px-8 py-1 cursor-pointer font-semibold"
-          onClick={() =>
-            openInNewTab("https://www.instagram.com/sleekcustomsgarage/")
-          }
+          href="tel:+447394463391"
         >
           Book Now
-        </div>
+        </a>
       </div>
 
       <img
