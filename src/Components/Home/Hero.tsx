@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { openInNewTab } from "../../Pages/OpenLinks";
 
 type HeroProps = {
   scrollToServices: () => void;

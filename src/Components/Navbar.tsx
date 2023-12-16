@@ -2,7 +2,6 @@ import { navbarLinks } from "../data/constants/Home/homeConstants";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { openInNewTab } from "../Pages/OpenLinks";
 import { Link as ScrollLink } from "react-scroll";
 
 export default function Navbar() {
