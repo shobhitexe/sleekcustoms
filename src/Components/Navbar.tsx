@@ -9,8 +9,8 @@ export default function Navbar() {
 
   return (
     <div className="w-full px-20 py-5 font-Montserrat flex justify-end align-middle fixed top-0 bg-black bg-opacity-50 backdrop-blur-sm z-20">
-      <div className="w-28 h-28 absolute sm:left-20 ss:left-10 left-5 sm:top-5 ss:top-2 top-1">
-        <Link to={"/"}>
+      <div className="absolute flex items-center sm:gap-3 gap-1 sm:left-20 ss:left-10 left-5 sm:top-5 ss:top-2 top-1">
+        <Link to={"/"} className=" w-full">
           <motion.img
             initial={{ opacity: 0, translateY: "50px" }}
             animate={{ opacity: 1, translateY: "0px" }}
@@ -27,6 +27,12 @@ export default function Navbar() {
             alt="logo"
           />
         </Link>
+        <a
+          href="tel:07394463391"
+          className="text-white text-left sm:text-[15px] text-[13px] capitalize opacity-70 font-Montserrat mt-3 ss:w-auto w-[100px]"
+        >
+          07394463391
+        </a>
       </div>
 
       <div className="sm:flex hidden md:gap-5 gap-3 items-center">

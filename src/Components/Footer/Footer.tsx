@@ -50,9 +50,12 @@ export default function Footer() {
               </span>
               8am-5pm
             </p>
-            <p className="text-white text-left text-[13px]  capitalize opacity-70 font-Montserrat mt-3 ss:w-auto w-[100px]">
+            <a
+              href="tel:07394463391"
+              className="text-white text-left text-[13px] capitalize opacity-70 font-Montserrat mt-3 ss:w-auto w-[100px]"
+            >
               07394463391
-            </p>
+            </a>
           </div>
         </div>
       </div>
