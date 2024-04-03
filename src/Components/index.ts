@@ -25,6 +25,7 @@ import ProtectionPackage from "./PaintProtection/ProtectionPackage";
 import AboutHead from "./About/AboutHead";
 import AboutParallex from "./About/AboutParallex";
 import AboutGrid from "./About/AboutGrid";
+import ChatWidget from "./ChatWidget/ChatWidget";
 
 export {
   Navbar,
@@ -54,4 +55,5 @@ export {
   AboutHead,
   AboutParallex,
   AboutGrid,
+  ChatWidget,
 };
