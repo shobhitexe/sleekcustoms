@@ -34,7 +34,7 @@ function App() {
 
   return (
     <Fragment>
-      <ChatWidget />
+      {/* <ChatWidget /> */}
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
