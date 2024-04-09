@@ -4,7 +4,6 @@ import {
   Contact,
   ReviewComponent,
   PortfolioComponent,
-  ChatWidget,
 } from "./Components";
 import {
   Home,
@@ -34,7 +33,6 @@ function App() {
 
   return (
     <Fragment>
-      {/* <ChatWidget /> */}
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
