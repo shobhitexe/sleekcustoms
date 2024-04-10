@@ -42,7 +42,7 @@ export const servicesData: servicesDataType[] = [
 const imgBasePartners: string = "/images/partners";
 
 export const partnersImages: partnersImagesType[] = [
-  { alt: "Onyx", image: `${imgBasePartners}/Onyx_Logo.webp` },
+  { alt: "Wax is dead", image: `${imgBasePartners}/wax-is-dead-logo.webp` },
   { alt: "Kamikaze", image: `${imgBasePartners}/Kamikaze.webp` },
   { alt: "Avery", image: `${imgBasePartners}/Avery.webp` },
 ];
