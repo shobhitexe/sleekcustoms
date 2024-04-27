@@ -75,7 +75,7 @@ export const footerData: FooterDataType = {
     { title: "Paint Protection Film", link: "/paint-protection" },
   ],
   misc: [
-    { title: "Terms & Conditions", link: "" },
+    { title: "Terms & Conditions", link: "/terms-and-conditions" },
     { title: "FAQ", link: "" },
   ],
   socials: [
