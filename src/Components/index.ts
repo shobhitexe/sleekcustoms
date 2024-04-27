@@ -26,6 +26,7 @@ import AboutHead from "./About/AboutHead";
 import AboutParallex from "./About/AboutParallex";
 import AboutGrid from "./About/AboutGrid";
 import ChatWidget from "./ChatWidget/ChatWidget";
+import TermsAndConditions from "./TermsAndConditions/TermsAndConditions";
 
 export {
   Navbar,
@@ -56,4 +57,5 @@ export {
   AboutParallex,
   AboutGrid,
   ChatWidget,
+  TermsAndConditions,
 };

@@ -4,6 +4,7 @@ import {
   Contact,
   ReviewComponent,
   PortfolioComponent,
+  TermsAndConditions,
 } from "./Components";
 import {
   Home,
@@ -44,6 +45,7 @@ function App() {
         <Route path="/ceramic-coating" element={<CeramicCoating />} />
         <Route path="/paint-protection" element={<PaintProtection />} />
         <Route path="/about" element={<About />} />
+        <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
       </Routes>
 
       {currentPath !== "/" &&
