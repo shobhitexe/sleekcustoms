@@ -30,7 +30,7 @@ export const ceramicCoatingBenifitsGrid: string[] = [
 
 export const ceramicCoatingPackagedata: CeramicCoatingPackagedataType[] = [
   {
-    heading: "ONYX GRAPHENE PRO",
+    heading: "Wax Is Dead Ultimate",
     pointers: [
       "Lifetime Warranty",
       "1 Layers of Ceramic 10H",
@@ -40,7 +40,7 @@ export const ceramicCoatingPackagedata: CeramicCoatingPackagedataType[] = [
     pricing: 597,
   },
   {
-    heading: "QUARTZ PRO",
+    heading: "Wax Is Dead Supreme",
     pointers: [
       "5 Year Warranty",
       "1 Layer of Ceramic 9H",
