@@ -22,8 +22,7 @@ export default function TermsAndConditions() {
         <br />
         3. In the event that we cannot complete the services on the designated
         day we will seek to contact you and arrange for the services to be
-        completed on the soonest available subsequent day. But we will accept
-        liability for failing to perform services on time, or not at all.
+        completed on the soonest available subsequent day.
         <br />
         4. We will endeavour to take all reasonable care of your vehicle while
         it is in our possession. If we cause actual physical damage to your
@@ -59,11 +58,12 @@ export default function TermsAndConditions() {
         7. You will pay us for performing the services at the price set out on
         the estimate you accept and we convert into an invoice.
         <br />
-        7a. Non refundable deposit of £100 is required to secure the booking and
-        will expire upon the date of your booking. Should you fail to keep or
-        cancel a confirmed booking with 42 hours notice prior to work being
-        carried out you agree to surrender the deposit to us to cover loss of
-        earnings for the day/s work to be carried out.
+        7a. Non refundable fee of 50% of service final price is required to secure the booking.
+This fee will be subtracted from your final bill.
+Should you fail to keep or cancel a confirmed booking with 2 weeks (10 working days) notice prior to work being carried out you agree to surrender the fee to us to cover loss of earnings for the day/s work to be carried out.
+Each and every appointment can only be rescheduled ONCE and no further than ONE MONTH into the future. <br/><br/>
+
+The fee can be moved towards the next appointment ONLY when 2 weeks (10 working days)  notice is given before the appointment.
         <br />
         8. You shall pay us in full before the return of your vehicle keys. We
         are legally entitled to a lieu of payment over your vehicle entitling us
