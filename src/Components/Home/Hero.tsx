@@ -34,7 +34,7 @@ export default function Hero({ scrollToServices }: HeroProps) {
           viewport={{ once: true, amount: 0.5 }}
           className="text-white text-center font-semibold md:text-[26px] ss:text-[20px] text-[15px] capitalize opacity-70 font-Montserrat"
         >
-          PREMIUM AUTO DEALING
+          PREMIUM AUTO DETAILING
         </motion.p>
         <motion.p
           initial={{ opacity: 0, translateY: "20%" }}

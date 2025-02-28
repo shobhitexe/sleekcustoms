@@ -41,10 +41,9 @@ export default function Footer() {
               <span className="text-white text-left ss:text-[12px] text-[13px] capitalize opacity-70 font-Montserrat font-semibold">
                 Address:{" "}
               </span>
-            211 Cambuslang Road Glasgow, 
-      Lanarkshire G72 7TS United Kingdom
-      John Hillhouse Industrial Estate, Unit 30, Sleek        
-      Customs
+              211 Cambuslang Road Glasgow, Lanarkshire G72 7TS United Kingdom
+              John Hillhouse Industrial Estate, Unit 30, Car Detailing
+              SleekCustoms
             </p>
             <p className="text-white text-left text-[13px]  capitalize opacity-70 font-Montserrat mt-3 ss:w-auto w-[100px]">
               <span className="text-white text-left text-[13px] capitalize opacity-70 font-Montserrat font-semibold">
