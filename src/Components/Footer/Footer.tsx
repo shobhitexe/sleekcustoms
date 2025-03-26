@@ -38,6 +38,9 @@ export default function Footer() {
               Business info
             </h1>
             <p className="text-white text-left ss:text-[11px] text-[11px] md:w-[300px] sm:w-[250px] ss:w-auto w-[180px] capitalize opacity-70 font-Montserrat">
+              Car Detailing {"𝓢𝓵𝓮𝓮𝓴"} 𝓒𝓾𝓼𝓽𝓸𝓶𝓼 🚗🫧 Car cleaning | Paint
+              protection film | Car polishing <br />
+              <br />
               <span className="text-white text-left ss:text-[12px] text-[13px] capitalize opacity-70 font-Montserrat font-semibold">
                 Address:{" "}
               </span>
